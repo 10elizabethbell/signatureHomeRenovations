@@ -1,6 +1,6 @@
 # Signature Home Renovations LLC — handoff at ~60%
 
-**Live file:** index.html · **Repo:** https://github.com/10elizabethbell/signatureHomeRenovations · **Built:** 2026-10-08 from Muse brief (run 2026-10-08)
+**Live:** https://10elizabethbell.github.io/signatureHomeRenovations/ (GitHub Pages, main /) · **Repo:** https://github.com/10elizabethbell/signatureHomeRenovations · **Built:** 2026-10-08 from Muse brief (run 2026-10-08)
 
 ## What's built
 - **World:** a wet cobalt-tile shower wall with gold grout, taken from their best photo (cobalt tile + brass fixtures = their navy + gold flyer). Navy and porcelain sections joined by moving waterline seams with a gold edge.
@@ -24,7 +24,7 @@
 ## Placeholders and gaps
 - Only photos: the six small tiles inside their flyer (~300×220 each). They hold up at the sizes used, but look soft on big retina screens. Full-size originals would help a lot.
 - No before/after pairs, no reviews, no hours, no email, no owner name: nothing about them appears on the page.
-- `og:image` points at `assets/og.jpg` (1200×630 hero capture) via raw.githubusercontent.com. When the page is hosted, switch it to the host's absolute URL and add `og:url`.
+- `og:image` / `og:url` point at the GitHub Pages URL (`assets/og.jpg`, 1200×630 hero capture). Update them if the site moves to its own domain.
 - The Facebook link uses the profile id (page info was restricted to Muse); check it opens the right page.
 
 ## Questions for the owner
