@@ -277,7 +277,7 @@
       },
       {
         "name": "glazed-chip",
-        "value": "inset 0 -6px 10px rgba(6,14,40,.35), 0 6px 12px -6px rgba(20,34,61,.6)",
+        "value": "inset 0 -6px 10px rgba(0,0,0,.3), 0 6px 12px -6px rgba(0,0,0,.35)",
         "purpose": "Cobalt service and step chips."
       },
       {

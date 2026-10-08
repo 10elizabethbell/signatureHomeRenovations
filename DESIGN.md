@@ -17,7 +17,40 @@ colors:
   on-navy: "#f1f3f8"
   on-navy-soft: "#bfc9dc"
   white: "#ffffff"
+  shadow: "rgba(0,0,0,.35)"
+  shadow-soft: "rgba(0,0,0,.3)"
 typography:
+  display-desktop:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(56px, 6vw, 84px)"
+    fontWeight: 900
+    lineHeight: 1.02
+    letterSpacing: "-0.01em"
+  pitch:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(17px, 4.6vw, 20px)"
+    fontWeight: 400
+    lineHeight: 1.4
+  pitch-desktop:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "20px"
+    fontWeight: 400
+    lineHeight: 1.4
+  numeral:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "24px"
+    fontWeight: 900
+    lineHeight: 1
+  label-lg:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "18px"
+    fontWeight: 800
+    lineHeight: 1
+  body-sm:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "16px"
+    fontWeight: 400
+    lineHeight: 1.4
   display:
     fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
     fontSize: "clamp(40px, 11.6vw, 88px)"
@@ -191,6 +224,8 @@ A two-ground navy/porcelain system with a single metallic accent family (gold, t
 - **Quote** (600, clamp(19px, 5.2vw, 25px), 1.4, max 30ch): the owner's first-person promise in the close.
 - **Body** (400, 17px, 1.55): all reading copy. Pitch line runs 17-20px at 1.4, max 34ch; section intros max 46ch; step copy max 44ch.
 - **Label** (800, 17px, uppercase, +0.02em): button text; 16px in the dock and phone bar.
+- **Body small** (400, 16px, 1.4): service one-liners, dock labels (800), the top-bar number (800; 18px on desktop).
+- **Numeral** (900, 24px): step numbers in cobalt chips.
 - **Small** (700, 15px): proof checks, captions (400 weight), footer, the service-area line (800, uppercase, +0.04em).
 
 ### Named Rules
@@ -214,7 +249,8 @@ Depth is physical, not interface chrome: tiles are lit by the swell, photos are 
 ### Shadow Vocabulary
 - **Set Object** (`0 10px 24px -8px rgba(6,14,32,.55), 0 3px 8px -2px rgba(6,14,32,.35)`): photo tiles, gallery frames, the phone close card.
 - **Hung Plaque** (`0 18px 30px -16px rgba(0,0,0,.32), 0 4px 10px -4px rgba(0,0,0,.2)`): the gold price plaque on porcelain.
-- **Glazed Chip** (`inset 0 -6px 10px rgba(6,14,40,.35), 0 6px 12px -6px rgba(20,34,61,.6)`): cobalt chips, an inset shade so they read as glazed tiles.
+- **Glazed Chip** (`inset 0 -6px 10px rgba(0,0,0,.3), 0 6px 12px -6px rgba(0,0,0,.35)`): cobalt chips, an inset shade so they read as glazed tiles.
+- **Feature Lift** (`0 24px 40px -18px rgba(0,0,0,.35)`): the desktop feature photo beside the services.
 - **Dock Lift** (`0 -10px 24px -8px rgba(6,14,32,.6)`): the fixed bottom dock, casting upward.
 
 ### Named Rules
