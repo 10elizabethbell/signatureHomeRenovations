@@ -7,6 +7,10 @@
 <meta name="description" content="Bathroom renovations, decks, flooring, painting and repairs across South Jersey. Free estimates. Licensed and insured. Call or text 609-649-5069.">
 <meta property="og:title" content="Signature Home Renovations LLC">
 <meta property="og:description" content="Bathrooms, decks, flooring, painting and repairs. Free estimates. Licensed and insured. Call or text 609-649-5069.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://raw.githubusercontent.com/10elizabethbell/signatureHomeRenovations/main/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta name="theme-color" content="#0f2140">
 <style>
 /* ============ Tokens ============ */
@@ -18,8 +22,8 @@
   --gold:#d6aa4e;
   --gold-hi:#f2d58a;
   --gold-deep:#8c6422;   /* gold for small marks on light grounds */
-  --porcelain:#f5f1e8;   /* light sections: grout-white porcelain */
-  --porcelain-2:#ebe4d4;
+  --porcelain:#f3f4f6;   /* light sections: grout-white porcelain */
+  --porcelain-2:#e4e8ee;
   --ink:#14223d;
   --ink-soft:#46536d;
   --on-navy:#f1f3f8;
@@ -97,15 +101,15 @@ p{margin:0}
 .light .sec-head h2{color:var(--ink)}
 /* price plaque: brushed gold, like the brass in their cobalt shower */
 .plaque{position:relative;display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px 14px;padding:22px 20px;border-radius:var(--radius);text-decoration:none;color:var(--navy);
-  background:linear-gradient(125deg,#b98a35 0%,#e9c675 38%,#f4dc98 50%,#d3a750 66%,#a9792b 100%);box-shadow:0 18px 30px -16px rgba(140,100,34,.7),0 4px 10px -4px rgba(20,34,61,.35)}
-.plaque-k{grid-column:1/-1;font-weight:900;text-transform:uppercase;font-size:16px;letter-spacing:.04em}
+  background:var(--gold);box-shadow:0 18px 30px -16px rgba(20,34,61,.5),0 4px 10px -4px rgba(20,34,61,.35)}
+.plaque-k{grid-column:1/-1;font-weight:900;text-transform:uppercase;font-size:21px;line-height:1.1}
 .plaque-v{grid-column:1/-1;white-space:nowrap;font-weight:900;font-size:clamp(30px,8.4vw,48px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
 .plaque-n{grid-column:1/2;font-size:15px;font-weight:700;color:#3a2a0c}
 .plaque .go{grid-row:3;grid-column:2}
 .go{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:2px solid currentColor;flex:none}
 .go .icon{width:20px;height:20px}
-.svc-list{list-style:none;margin:0;padding:0;border-top:1px solid #d9d0bc}
-.svc{display:flex;align-items:center;gap:16px;padding:18px 2px;min-height:84px;border-bottom:1px solid #d9d0bc;text-decoration:none;color:var(--ink);-webkit-tap-highlight-color:transparent}
+.svc-list{list-style:none;margin:0;padding:0;border-top:1px solid #d3d9e3}
+.svc{display:flex;align-items:center;gap:16px;padding:18px 2px;min-height:84px;border-bottom:1px solid #d3d9e3;text-decoration:none;color:var(--ink);-webkit-tap-highlight-color:transparent}
 .svc-ico{display:grid;place-items:center;width:52px;height:52px;flex:none;border-radius:5px;background:var(--cobalt);color:var(--gold-hi);box-shadow:inset 0 -6px 10px rgba(6,14,40,.35),0 6px 12px -6px rgba(20,34,61,.6)}
 .svc-ico .icon{width:28px;height:28px;stroke-width:1.75}
 .svc-t{flex:1;min-width:0}
@@ -121,8 +125,7 @@ p{margin:0}
 
 /* ============ Work (navy, tiled ground) ============ */
 .work{--seam-fill:var(--navy);padding:44px 0 92px;
-  background-color:var(--navy);
-  background-image:linear-gradient(90deg,rgba(214,170,78,.07) 2px,transparent 2px),linear-gradient(rgba(214,170,78,.07) 2px,transparent 2px);background-size:48px 48px}
+  background-color:var(--navy)}
 .work .sec-head p{color:var(--on-navy-soft)}
 .gallery{display:grid;grid-template-columns:1fr 1fr;gap:22px 14px;margin-top:28px;list-style:none;padding:0}
 .shot{margin:0;will-change:transform;user-select:none;-webkit-user-select:none}
@@ -144,6 +147,9 @@ p{margin:0}
 .close{--seam-fill:var(--navy);position:relative;isolation:isolate;padding:64px 0 76px;text-align:center;background-color:var(--navy)}
 .close .wall{z-index:-2}
 .close-scrim{position:absolute;inset:0;z-index:-1;background:radial-gradient(120% 70% at 50% 46%,rgba(15,33,64,.96) 0,rgba(15,33,64,.9) 48%,rgba(15,33,64,.35) 100%)}
+.close-scrim{display:none}
+.close .wrap{position:relative;width:auto;margin:0 16px;padding:30px 18px 26px;border-radius:8px;background:rgba(15,33,64,.93);box-shadow:var(--shadow)}
+.close{padding:96px 0 104px}
 .close .logo{width:min(300px,78vw);margin:0 auto}
 .quote{margin:26px auto 0;max-width:30ch;font-size:clamp(19px,5.2vw,25px);line-height:1.4;font-weight:600;color:#fff;text-wrap:balance}
 .quote-by{margin-top:12px;font-size:15px;color:var(--on-navy-soft)}
@@ -196,6 +202,8 @@ p{margin:0}
   .gallery{grid-template-columns:repeat(3,1fr);gap:34px 28px}
   .steps{grid-template-columns:repeat(3,1fr);gap:40px}
   .close{padding:110px 0 120px}
+  .close-scrim{display:block}
+  .close .wrap{margin:0 auto;width:100%;padding:0 var(--gutter);background:none;box-shadow:none;border-radius:0}
   .dock{display:none}
   .foot{padding-bottom:36px}
   .foot-grid{grid-template-columns:1fr auto;align-items:center}
@@ -226,7 +234,7 @@ FORM: Single static file, system fonts, heavy uppercase display, navy and porcel
       <p class="pitch">Bathrooms, decks, flooring, painting and repairs across South Jersey.</p>
       <div class="cta" id="heroCta">
         <a class="btn btn-primary" href="sms:+16096495069" data-sms="general"><svg class="icon" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>Text for a free estimate <span class="num">· 609-649-5069</span></a>
-        <a class="btn btn-secondary" href="tel:+16096495069"><svg class="icon" viewBox="0 0 24 24"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Call<span class="num-m">609-649-5069</span></a>
+        <a class="btn btn-secondary" href="tel:+16096495069"><svg class="icon" viewBox="0 0 24 24"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span>Call<span class="num-m"> 609-649-5069</span></span></a>
       </div>
       <ul class="checks">
         <li><svg class="icon" viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>Free estimates</li>
@@ -247,7 +255,7 @@ FORM: Single static file, system fonts, heavy uppercase display, navy and porcel
   <div class="wrap services-grid">
     <div class="sec-head">
       <h2 id="svc-h">Pick a job. Text it in.</h2>
-      <p>Tap a service and a text to 609-649-5069 opens with it already filled in.</p>
+      <p>Tap a service. A text opens with it already filled in.</p>
     </div>
     <ul class="svc-list">
       <li><a class="svc" href="sms:+16096495069" data-sms="bathrooms">
@@ -256,15 +264,15 @@ FORM: Single static file, system fonts, heavy uppercase display, navy and porcel
         <span class="go" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
       <li><a class="svc" href="sms:+16096495069" data-sms="decks">
         <span class="svc-ico"><svg class="icon" viewBox="0 0 32 32"><path d="M3 9h26M3 13h26M5 9v18M27 9v18M10 13v14M16 13v14M22 13v14M3 27h26"/></svg></span>
-        <span class="svc-t"><h3>Decks</h3><p>Decks, stairs and railings, built to last outdoors.</p></span>
+        <span class="svc-t"><h3>Decks</h3><p>Decks, stairs and railings.</p></span>
         <span class="go" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
       <li><a class="svc" href="sms:+16096495069" data-sms="flooring">
         <span class="svc-ico"><svg class="icon" viewBox="0 0 32 32"><path d="M11 4h10l7 24H4zM16 4v24M13.5 4 10 28M18.5 4 22 28M7 16h18M5.5 22h21"/></svg></span>
-        <span class="svc-t"><h3>Flooring</h3><p>New floors, laid level, from one room to the whole house.</p></span>
+        <span class="svc-t"><h3>Flooring</h3><p>New floors, installed and finished.</p></span>
         <span class="go" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
       <li><a class="svc" href="sms:+16096495069" data-sms="painting">
         <span class="svc-ico"><svg class="icon" viewBox="0 0 32 32"><path d="M20 4l8 8-9 9-8-8zM11 13l-2 2 8 8 2-2M13 19l-7 7a2 2 0 0 0 3 3l7-7"/></svg></span>
-        <span class="svc-t"><h3>Painting</h3><p>Walls, ceilings and trim with clean, sharp lines.</p></span>
+        <span class="svc-t"><h3>Painting</h3><p>Painting with attention to detail.</p></span>
         <span class="go" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
       <li><a class="svc" href="sms:+16096495069" data-sms="repairs">
         <span class="svc-ico"><svg class="icon" viewBox="0 0 32 32"><path d="M19 5a6 6 0 0 0-6 8L4 22l2 4 4 2 9-9a6 6 0 0 0 8-6l-3 3-4-1-1-4zM9 23l1 1"/></svg></span>
@@ -275,10 +283,10 @@ FORM: Single static file, system fonts, heavy uppercase display, navy and porcel
       <a class="plaque" href="sms:+16096495069" data-sms="bathrooms">
         <span class="plaque-k">Full bathroom renovation</span>
         <span class="plaque-v">$7,000–$10,000</span>
-        <span class="plaque-n">Labor only. The estimate is free.</span>
+        <span class="plaque-n">Labor only. Fair and honest pricing, and the estimate is free.</span>
         <span class="go" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
-      <figure class="feature" data-float><img data-img="work-03" alt="" draggable="false"></figure>
+      <figure class="feature" data-float><img data-img="work-04" alt="" draggable="false"></figure>
     </div>
   </div>
 </section>
@@ -286,7 +294,7 @@ FORM: Single static file, system fonts, heavy uppercase display, navy and porcel
 <section class="sec work" id="work" aria-labelledby="work-h">
   <svg class="seam" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true"><path class="fill"/><path class="line"/></svg>
   <div class="wrap">
-    <div class="sec-head"><h2 id="work-h">Recent work</h2><p>Real jobs, straight from the Signature Home Renovations flyer.</p></div>
+    <div class="sec-head"><h2 id="work-h">Recent work</h2><p>Real jobs by Signature Home Renovations.</p></div>
     <ul class="gallery">
       <li><figure class="shot" data-float><div class="frame"><img data-img="work-03" alt="Cobalt-blue tile shower with brass fixtures and a wood vanity" draggable="false"></div><figcaption>Cobalt tile shower, brass fixtures</figcaption></figure></li>
       <li><figure class="shot" data-float><div class="frame"><img data-img="work-02" alt="Marble-look tile walk-in shower with a freestanding tub" draggable="false"></div><figcaption>Marble-look tile with a freestanding tub</figcaption></figure></li>
@@ -303,7 +311,7 @@ FORM: Single static file, system fonts, heavy uppercase display, navy and porcel
   <div class="wrap">
     <div class="sec-head"><h2 id="how-h">How it works</h2></div>
     <ol class="steps">
-      <li class="step"><span class="step-n" aria-hidden="true">1</span><div><h3>Text or call</h3><p>Send a text or call <a href="tel:+16096495069">609-649-5069</a> and say what you'd like done.</p></div></li>
+      <li class="step"><span class="step-n" aria-hidden="true">1</span><div><h3>Text or call</h3><p>Send a text or call and say what you'd like done.</p></div></li>
       <li class="step"><span class="step-n" aria-hidden="true">2</span><div><h3>Free estimate</h3><p>You get a free estimate, with fair and honest pricing.</p></div></li>
       <li class="step"><span class="step-n" aria-hidden="true">3</span><div><h3>Done right</h3><p>Licensed and insured, with 15+ years of construction experience behind the work.</p></div></li>
     </ol>
@@ -330,7 +338,7 @@ FORM: Single static file, system fonts, heavy uppercase display, navy and porcel
 <footer class="foot">
   <div class="wrap foot-grid">
     <div>
-      <p><strong>Signature Home Renovations LLC</strong> · Licensed and insured</p>
+      <p><strong>Signature Home Renovations LLC</strong></p>
       <div class="foot-links">
         <a href="tel:+16096495069">Call or text 609-649-5069</a>
         <a href="https://www.facebook.com/profile.php?id=61578914443602">Facebook page</a>
@@ -452,6 +460,7 @@ function TileWall(host){
   var tiles = [], sprites = [], drop = null, drops = [], rings = [], heights = null;
   var LV = 14, VARIANTS = [[224, 66, 33], [222, 70, 28], [226, 62, 38], [220, 72, 24]];
 
+  function hash(c, r, k){ var x = Math.sin(c * 127.1 + r * 311.7 + k * 74.7) * 43758.5453; return x - Math.floor(x); }
   function mk(w, h){ var c = document.createElement('canvas'); c.width = Math.ceil(w); c.height = Math.ceil(h); return c; }
   function tileSprite(base, lv){
     var s = tile, c = mk(s * dpr, s * dpr), g = c.getContext('2d'); g.scale(dpr, dpr);
@@ -476,10 +485,13 @@ function TileWall(host){
     var sh = g.createRadialGradient(13.5, 14.5, 2, 13.5, 14.5, 10.5);
     sh.addColorStop(0, 'rgba(4,10,35,.35)'); sh.addColorStop(1, 'rgba(4,10,35,0)');
     g.fillStyle = sh; g.fillRect(0, 0, s, s);
-    var b = g.createRadialGradient(10, 9, 1, 12, 12, 9);
-    b.addColorStop(0, 'rgba(235,242,255,.85)'); b.addColorStop(0.35, 'rgba(150,180,240,.35)');
-    b.addColorStop(0.8, 'rgba(40,70,150,.25)'); b.addColorStop(1, 'rgba(10,25,80,.55)');
+    var b = g.createRadialGradient(12.5, 13.5, 1, 12, 12, 9);
+    b.addColorStop(0, 'rgba(120,160,240,.55)'); b.addColorStop(0.6, 'rgba(60,95,190,.6)');
+    b.addColorStop(0.88, 'rgba(12,28,85,.85)'); b.addColorStop(1, 'rgba(8,20,70,.5)');
     g.beginPath(); g.arc(12, 12, 9, 0, Math.PI * 2); g.fillStyle = b; g.fill();
+    var sp = g.createRadialGradient(9, 8.5, 0, 9, 8.5, 3.6);
+    sp.addColorStop(0, 'rgba(255,255,255,.95)'); sp.addColorStop(1, 'rgba(255,255,255,0)');
+    g.fillStyle = sp; g.fillRect(4, 4, 10, 10);
     return c;
   }
   function layoutPhotos(){
@@ -526,7 +538,7 @@ function TileWall(host){
     for (var r = 0; r < rows; r++) for (var c = 0; c < cols; c++) {
       if (covered(c, r)) continue;
       tiles.push({ c: c, r: r, x: c * cell + cell / 2, y: r * cell + cell / 2, ox: 0, oy: 0, vx: 0, vy: 0,
-        v: (Math.random() * 4) | 0, bias: (Math.random() - 0.5) * 2.4 });
+        v: hash(c, r, 1) * 4 | 0, bias: (hash(c, r, 2) - 0.5) * 2.4 });
     }
     heights = new Float32Array(cols * rows);
     var n = W < 900 ? TUNE.dropsPhone : TUNE.dropsDesk;
@@ -534,7 +546,8 @@ function TileWall(host){
     if (REDUCED) step(0, 0);
   }
   function newDrop(anywhere, x, y){
-    return { x: x != null ? x : Math.random() * W, y: y != null ? y : (anywhere ? Math.random() * H : -10),
+    var x0 = W < 900 ? 0 : W * 0.55, y0 = W < 900 && band ? Math.max(0, band.offsetTop - cell) : 0;
+    return { x: x != null ? x : x0 + Math.random() * (W - x0), y: y != null ? y : (anywhere ? y0 + Math.random() * (H - y0) : y0 - 10),
       r: 3 + Math.random() * 4.5, vx: 0, vy: 0, hold: Math.random() * 2.5, slide: 0, life: 1 };
   }
   function heightAt(x, y, t){
@@ -635,7 +648,7 @@ function TileWall(host){
   }
   var job = { step: step };
   resize();
-  var rz; window.addEventListener('resize', function(){ clearTimeout(rz); rz = setTimeout(function(){ var w = host.getBoundingClientRect().width; if (Math.abs(w - W) > 1 || !REDUCED) resize(); }, 120); });
+  var rz; window.addEventListener('resize', function(){ clearTimeout(rz); rz = setTimeout(function(){ var w = host.getBoundingClientRect().width; if (Math.abs(w - W) > 1) resize(); }, 120); });
   if ('ResizeObserver' in window) { var lastH = H; new ResizeObserver(function(){ var h = host.getBoundingClientRect().height; if (Math.abs(h - lastH) > 40) { lastH = h; resize(); } }).observe(host); }
   LOOP.add(job, host);
 }
@@ -672,7 +685,8 @@ function TileWall(host){
         s.vx += (-TUNE.stiffness * s.ox - TUNE.damping * s.vx) * dt; s.vy += (-TUNE.stiffness * s.oy - TUNE.damping * s.vy) * dt;
         s.ox += s.vx * dt; s.oy += s.vy * dt;
       }
-      var bob = Math.sin(t * 1.4 + s.ph) * 2.2, tilt = Math.sin(t * 1.1 + s.ph * 1.7) * 0.6 + s.ox * 0.05;
+      var bx = el.offsetLeft, by = el.offsetTop, hh = swell(bx, by, t);
+      var bob = hh * 2.4, tilt = (swell(bx + 40, by, t) - hh) * 1.2 + s.ox * 0.05;
       el.style.transform = REDUCED ? 'none' : 'translate3d(' + s.ox.toFixed(2) + 'px,' + (s.oy + bob).toFixed(2) + 'px,0) rotate(' + tilt.toFixed(3) + 'deg)';
     } }, el);
   });
