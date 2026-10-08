@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-08T21:40:17.299Z",
+        "reason": "Claude (pitch-site): imgs get src from embedded base64 blocks at DOMContentLoaded per pitch-site build-notes lazy-load recipe"
+      },
+      {
+        "rule": "codex-grid-background",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-08T21:42:23.249Z",
+        "reason": "Claude (pitch-site): the grid is the committed world's literal tile grout (static fallback for the canvas tile wall), per direction contract"
+      }
+    ]
+  }
+}
