@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T21:51:38.176754+00:00",
+  "title": "Design System: Signature Home Renovations LLC",
+  "extensions": {
+    "colorMeta": {
+      "navy": {
+        "role": "neutral",
+        "displayName": "Flyer Navy",
+        "canonical": "#0f2140",
+        "tonalRamp": [
+          "#0f203e",
+          "#19376b",
+          "#244f99",
+          "#2e66c6",
+          "#5685d7",
+          "#83a6e2",
+          "#b5caee",
+          "#eaf0fa"
+        ]
+      },
+      "navy-2": {
+        "role": "neutral",
+        "displayName": "Deep Navy Step",
+        "canonical": "#142a50",
+        "tonalRamp": [
+          "#0f203d",
+          "#1b386a",
+          "#264f97",
+          "#3167c4",
+          "#5886d5",
+          "#85a6e0",
+          "#b6caed",
+          "#ebf0fa"
+        ]
+      },
+      "navy-3": {
+        "role": "neutral",
+        "displayName": "Navy Frame Fill",
+        "canonical": "#1b3666",
+        "tonalRamp": [
+          "#10203c",
+          "#1c3869",
+          "#274f95",
+          "#3366c2",
+          "#5a85d3",
+          "#86a6df",
+          "#b6caec",
+          "#ebf0fa"
+        ]
+      },
+      "cobalt": {
+        "role": "secondary",
+        "displayName": "Shower Cobalt",
+        "canonical": "#1d3c94",
+        "tonalRamp": [
+          "#0d1a40",
+          "#162d6f",
+          "#1f409e",
+          "#2853cd",
+          "#5075dd",
+          "#7f9ae6",
+          "#b2c2f0",
+          "#eaeefb"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Brass Gold",
+        "canonical": "#d6aa4e",
+        "tonalRamp": [
+          "#3e2f0e",
+          "#6c5119",
+          "#997323",
+          "#c7952e",
+          "#d8ad55",
+          "#e2c383",
+          "#eedbb4",
+          "#faf5ea"
+        ]
+      },
+      "gold-hi": {
+        "role": "primary",
+        "displayName": "Polished Brass",
+        "canonical": "#f2d58a",
+        "tonalRamp": [
+          "#453408",
+          "#775a0d",
+          "#aa8013",
+          "#dca618",
+          "#eabb43",
+          "#f0ce75",
+          "#f6e1ac",
+          "#fcf7e8"
+        ]
+      },
+      "gold-deep": {
+        "role": "primary",
+        "displayName": "Aged Brass",
+        "canonical": "#8c6422",
+        "tonalRamp": [
+          "#3e2c0f",
+          "#6b4c1a",
+          "#986c25",
+          "#c58d30",
+          "#d6a657",
+          "#e1be84",
+          "#edd8b5",
+          "#faf4ea"
+        ]
+      },
+      "grout-gold": {
+        "role": "primary",
+        "displayName": "Grout Gold",
+        "canonical": "#9a7430",
+        "tonalRamp": [
+          "#3a2c12",
+          "#654c20",
+          "#906c2d",
+          "#bb8d3a",
+          "#cda660",
+          "#dbbe8a",
+          "#e9d8b9",
+          "#f9f4ec"
+        ]
+      },
+      "porcelain": {
+        "role": "neutral",
+        "displayName": "Grout-White Porcelain",
+        "canonical": "#f3f4f6",
+        "tonalRamp": [
+          "#21242c",
+          "#393f4c",
+          "#515a6c",
+          "#69758c",
+          "#8891a5",
+          "#a8afbd",
+          "#cbcfd8",
+          "#f0f2f4"
+        ]
+      },
+      "porcelain-rule": {
+        "role": "neutral",
+        "displayName": "Porcelain Rule",
+        "canonical": "#d3d9e3",
+        "tonalRamp": [
+          "#1e242f",
+          "#343f51",
+          "#495973",
+          "#5f7496",
+          "#7f91ae",
+          "#a2aec3",
+          "#c7cfdb",
+          "#eff2f5"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#14223d",
+        "tonalRamp": [
+          "#13203a",
+          "#213864",
+          "#2f4f8e",
+          "#3c67b8",
+          "#6286cb",
+          "#8ca6d9",
+          "#bacae8",
+          "#ecf0f9"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "#46536d",
+        "tonalRamp": [
+          "#1e232f",
+          "#343d51",
+          "#4a5773",
+          "#607295",
+          "#808fad",
+          "#a2adc3",
+          "#c7cedb",
+          "#eff1f5"
+        ]
+      },
+      "on-navy": {
+        "role": "neutral",
+        "displayName": "On-Navy",
+        "canonical": "#f1f3f8",
+        "tonalRamp": [
+          "#192133",
+          "#2c3958",
+          "#3f517e",
+          "#5269a3",
+          "#7488b9",
+          "#99a8cc",
+          "#c2cbe0",
+          "#eef0f6"
+        ]
+      },
+      "on-navy-soft": {
+        "role": "neutral",
+        "displayName": "On-Navy Soft",
+        "canonical": "#bfc9dc",
+        "tonalRamp": [
+          "#1b2331",
+          "#2f3c56",
+          "#43567a",
+          "#576f9e",
+          "#788db5",
+          "#9cacc9",
+          "#c4cddf",
+          "#eff1f6"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#262626",
+          "#424242",
+          "#5e5e5e",
+          "#7a7a7a",
+          "#969696",
+          "#b2b2b2",
+          "#d1d1d1",
+          "#f2f2f2"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; 900 uppercase, one phrase may be lit in gold."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section heads."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service names, step names, plaque label."
+      },
+      "price": {
+        "displayName": "Price",
+        "purpose": "The published price figure on the plaque, tabular figures."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading copy, 17px, 34-46ch measures."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "The owner's first-person promise in the close."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Button and bar-phone text, 800 uppercase."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Proof checks, captions, footer, service-area line."
+      }
+    },
+    "shadows": [
+      {
+        "name": "set-object",
+        "value": "0 10px 24px -8px rgba(6,14,32,.55), 0 3px 8px -2px rgba(6,14,32,.35)",
+        "purpose": "Photo tiles, gallery frames, phone close card."
+      },
+      {
+        "name": "hung-plaque",
+        "value": "0 18px 30px -16px rgba(0,0,0,.32), 0 4px 10px -4px rgba(0,0,0,.2)",
+        "purpose": "The gold price plaque on porcelain."
+      },
+      {
+        "name": "glazed-chip",
+        "value": "inset 0 -6px 10px rgba(6,14,40,.35), 0 6px 12px -6px rgba(20,34,61,.6)",
+        "purpose": "Cobalt service and step chips."
+      },
+      {
+        "name": "dock-lift",
+        "value": "0 -10px 24px -8px rgba(6,14,32,.6)",
+        "purpose": "Fixed bottom dock, casting upward."
+      },
+      {
+        "name": "button-primary",
+        "value": "0 10px 22px -10px rgba(6,14,32,.75)",
+        "purpose": "Primary (Text) button lift."
+      }
+    ],
+    "motion": [
+      {
+        "name": "press",
+        "value": "transform .15s ease-out; scale(.97)",
+        "purpose": "Button active state."
+      },
+      {
+        "name": "state-color",
+        "value": ".2s",
+        "purpose": "Button and arrow-disc color/background changes."
+      },
+      {
+        "name": "dock-slide",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1)",
+        "purpose": "Dock enter/exit."
+      },
+      {
+        "name": "image-fade",
+        "value": "opacity .5s ease-out",
+        "purpose": "Photos fade in once decoded."
+      },
+      {
+        "name": "shared-loop",
+        "value": "one requestAnimationFrame loop, dt capped at 50ms, IntersectionObserver pause (80px margin)",
+        "purpose": "All continuous motion: tile walls, seams, floating frames."
+      },
+      {
+        "name": "swell",
+        "value": "swell(x,y,t): 0.55 sin(x*.011+1.6t+1.2 sin .37t) + 0.38 sin((.6x+.8y)*.017-2.3t) + 0.26 sin(.023y+.004x+3.1t)(.6+.4 sin .21t)",
+        "purpose": "The single water field every moving element samples."
+      },
+      {
+        "name": "tile-spring",
+        "value": "pushRadius 120px, push 1900, carry 2.6, stiffness 38, damping 6.5, lift 0.03",
+        "purpose": "TUNE defaults for pointer push and spring-back."
+      },
+      {
+        "name": "ripple",
+        "value": "rippleSpeed 520px/s, rippleAmp 1.6, lifetime 2.2s, max 10 rings, swipe threshold 900px/s",
+        "purpose": "Rings from taps and fast swipes."
+      },
+      {
+        "name": "beads",
+        "value": "12 phone / 30 desktop",
+        "purpose": "Water drops sliding down the wall."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce -> loop never starts; one still frame per job",
+        "purpose": "Accessibility still state."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "base (phone)",
+        "value": "0px"
+      },
+      {
+        "name": "small-phone (max-width)",
+        "value": "379px"
+      },
+      {
+        "name": "desktop (min-width)",
+        "value": "900px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button (Text)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Gold-filled Text action; always the primary, repeated at hero, close and dock.",
+      "html": "<div class=\"ds-ground\"><a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 5h16v11H9l-5 4z\"/></svg>Text for a free estimate</a></div>",
+      "css": ":host{--navy:#0f2140;--navy-3:#1b3666;--cobalt:#1d3c94;--gold:#d6aa4e;--gold-hi:#f2d58a;--gold-deep:#8c6422;--porcelain:#f3f4f6;--ink:#14223d;--ink-soft:#46536d;--on-navy:#f1f3f8;--on-navy-soft:#bfc9dc;--radius:6px;--shadow:0 10px 24px -8px rgba(6,14,32,.55),0 3px 8px -2px rgba(6,14,32,.35)}.ds-ground{background:var(--navy);padding:24px}.ds-btn{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 22px;border:2px solid var(--gold);border-radius:var(--radius);font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:.02em;text-decoration:none;white-space:nowrap;transition:transform .15s ease-out,background-color .2s,color .2s}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.ds-btn svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-btn-primary{background:var(--gold);color:var(--navy);box-shadow:0 10px 22px -10px rgba(6,14,32,.75)}.ds-btn-primary:hover{background:var(--gold-hi);border-color:var(--gold-hi)}"
+    },
+    {
+      "name": "Secondary Button (Call)",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Gold-outlined Call action on translucent navy; same height and edge as the primary.",
+      "html": "<div class=\"ds-ground\"><a class=\"ds-btn ds-btn-secondary\" href=\"#\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2\"/></svg>Call 609-649-5069</a></div>",
+      "css": ":host{--navy:#0f2140;--navy-3:#1b3666;--cobalt:#1d3c94;--gold:#d6aa4e;--gold-hi:#f2d58a;--gold-deep:#8c6422;--porcelain:#f3f4f6;--ink:#14223d;--ink-soft:#46536d;--on-navy:#f1f3f8;--on-navy-soft:#bfc9dc;--radius:6px;--shadow:0 10px 24px -8px rgba(6,14,32,.55),0 3px 8px -2px rgba(6,14,32,.35)}.ds-ground{background:var(--navy);padding:24px}.ds-btn{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 22px;border:2px solid var(--gold);border-radius:var(--radius);font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:.02em;text-decoration:none;white-space:nowrap;transition:transform .15s ease-out,background-color .2s,color .2s}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.ds-btn svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-btn-secondary{background:rgba(15,33,64,.55);color:var(--gold-hi)}.ds-btn-secondary:hover{background:var(--gold);color:var(--navy)}"
+    },
+    {
+      "name": "Price Plaque",
+      "kind": "card",
+      "refersTo": "price-plaque",
+      "description": "The one solid-gold plate: label, price, note, arrow disc; one tap target.",
+      "html": "<div class=\"ds-ground\"><a class=\"ds-plaque\" href=\"#\"><span class=\"ds-k\">Full bathroom renovation</span><span class=\"ds-v\">$7,000–$10,000</span><span class=\"ds-n\">Labor only. Fair and honest pricing, and the estimate is free.</span><span class=\"ds-go\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></div>",
+      "css": ":host{--navy:#0f2140;--navy-3:#1b3666;--cobalt:#1d3c94;--gold:#d6aa4e;--gold-hi:#f2d58a;--gold-deep:#8c6422;--porcelain:#f3f4f6;--ink:#14223d;--ink-soft:#46536d;--on-navy:#f1f3f8;--on-navy-soft:#bfc9dc;--radius:6px;--shadow:0 10px 24px -8px rgba(6,14,32,.55),0 3px 8px -2px rgba(6,14,32,.35)}.ds-ground{background:var(--porcelain);padding:24px}.ds-go{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:2px solid currentColor;flex:none;transition:background-color .2s,color .2s}.ds-go svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-plaque{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px 14px;padding:22px 20px;border-radius:var(--radius);text-decoration:none;color:var(--navy);background:var(--gold);box-shadow:0 18px 30px -16px rgba(0,0,0,.32),0 4px 10px -4px rgba(0,0,0,.2)}.ds-k{grid-column:1/-1;font-weight:900;text-transform:uppercase;font-size:21px;line-height:1.1}.ds-v{grid-column:1/-1;white-space:nowrap;font-weight:900;font-size:40px;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}.ds-n{grid-column:1/2;font-size:15px;font-weight:700;color:#3a2a0c}.ds-plaque .ds-go{grid-row:3;grid-column:2}.ds-plaque:hover .ds-go{background:var(--navy);color:var(--gold-hi);border-color:var(--navy)}.ds-plaque:focus-visible{outline:3px solid var(--gold);outline-offset:3px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Hairline-ruled porcelain row: cobalt chip, title + line, aged-brass arrow disc; opens a pre-filled text.",
+      "html": "<div class=\"ds-ground\"><a class=\"ds-svc\" href=\"#\"><span class=\"ds-chip\"><svg viewBox=\"0 0 32 32\"><path d=\"M3 9h26M3 13h26M5 9v18M27 9v18M10 13v14M16 13v14M22 13v14M3 27h26\"/></svg></span><span class=\"ds-t\"><b>Decks</b><span>Decks, stairs and railings.</span></span><span class=\"ds-go\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></div>",
+      "css": ":host{--navy:#0f2140;--navy-3:#1b3666;--cobalt:#1d3c94;--gold:#d6aa4e;--gold-hi:#f2d58a;--gold-deep:#8c6422;--porcelain:#f3f4f6;--ink:#14223d;--ink-soft:#46536d;--on-navy:#f1f3f8;--on-navy-soft:#bfc9dc;--radius:6px;--shadow:0 10px 24px -8px rgba(6,14,32,.55),0 3px 8px -2px rgba(6,14,32,.35)}.ds-ground{background:var(--porcelain);padding:0 24px}.ds-chip{display:grid;place-items:center;width:52px;height:52px;flex:none;border-radius:5px;background:var(--cobalt);color:var(--gold-hi);box-shadow:inset 0 -6px 10px rgba(6,14,40,.35),0 6px 12px -6px rgba(20,34,61,.6);font-weight:900;font-size:24px}.ds-chip svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}.ds-go{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:2px solid currentColor;flex:none;transition:background-color .2s,color .2s}.ds-go svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-svc{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;display:flex;align-items:center;gap:16px;padding:18px 2px;min-height:84px;border-top:1px solid #d3d9e3;border-bottom:1px solid #d3d9e3;text-decoration:none;color:var(--ink)}.ds-t{flex:1}.ds-t b{display:block;font-weight:900;text-transform:uppercase;font-size:21px;letter-spacing:.01em;line-height:1.02}.ds-t span{display:block;margin-top:4px;font-size:16px;line-height:1.4;color:var(--ink-soft)}.ds-svc .ds-go{color:var(--gold-deep)}.ds-svc:hover .ds-go{background:var(--navy);border-color:var(--navy);color:var(--gold-hi)}.ds-svc:focus-visible{outline:3px solid var(--gold);outline-offset:3px}"
+    },
+    {
+      "name": "Step",
+      "kind": "custom",
+      "refersTo": "cobalt-chip",
+      "description": "Numbered cobalt chip with a title and short body on porcelain.",
+      "html": "<div class=\"ds-ground\"><div class=\"ds-step\"><span class=\"ds-chip\">2</span><div><b>Free estimate</b><p>You get a free estimate, with fair and honest pricing.</p></div></div></div>",
+      "css": ":host{--navy:#0f2140;--navy-3:#1b3666;--cobalt:#1d3c94;--gold:#d6aa4e;--gold-hi:#f2d58a;--gold-deep:#8c6422;--porcelain:#f3f4f6;--ink:#14223d;--ink-soft:#46536d;--on-navy:#f1f3f8;--on-navy-soft:#bfc9dc;--radius:6px;--shadow:0 10px 24px -8px rgba(6,14,32,.55),0 3px 8px -2px rgba(6,14,32,.35)}.ds-ground{background:var(--porcelain);padding:24px}.ds-chip{display:grid;place-items:center;width:52px;height:52px;flex:none;border-radius:5px;background:var(--cobalt);color:var(--gold-hi);box-shadow:inset 0 -6px 10px rgba(6,14,40,.35),0 6px 12px -6px rgba(20,34,61,.6);font-weight:900;font-size:24px}.ds-chip svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}.ds-step{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;color:var(--ink)}.ds-step b{display:block;margin-top:4px;font-weight:900;text-transform:uppercase;font-size:21px;line-height:1.02}.ds-step p{margin:6px 0 0;color:var(--ink-soft);font-size:17px;line-height:1.55;max-width:44ch}"
+    },
+    {
+      "name": "Photo Frame",
+      "kind": "card",
+      "refersTo": "photo-frame",
+      "description": "Job photo in a 4px gold frame with a caption; rides the shared swell on the live page.",
+      "html": "<div class=\"ds-ground\"><figure class=\"ds-shot\"><div class=\"ds-frame\"></div><figcaption>Cobalt tile shower, brass fixtures</figcaption></figure></div>",
+      "css": ":host{--navy:#0f2140;--navy-3:#1b3666;--cobalt:#1d3c94;--gold:#d6aa4e;--gold-hi:#f2d58a;--gold-deep:#8c6422;--porcelain:#f3f4f6;--ink:#14223d;--ink-soft:#46536d;--on-navy:#f1f3f8;--on-navy-soft:#bfc9dc;--radius:6px;--shadow:0 10px 24px -8px rgba(6,14,32,.55),0 3px 8px -2px rgba(6,14,32,.35)}.ds-ground{background:var(--navy);padding:24px}.ds-shot{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;margin:0;max-width:280px}.ds-frame{border:4px solid var(--gold);border-radius:4px;overflow:hidden;aspect-ratio:4/3;background:var(--navy-3);box-shadow:var(--shadow)}.ds-shot figcaption{margin-top:8px;font-size:15px;line-height:1.35;color:var(--on-navy-soft)}"
+    },
+    {
+      "name": "Dock",
+      "kind": "nav",
+      "refersTo": "dock",
+      "description": "Phone-only fixed bottom bar with the Text/Call pair, shown once the hero buttons leave view.",
+      "html": "<nav class=\"ds-dock\"><a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 5h16v11H9l-5 4z\"/></svg>Text estimate</a><a class=\"ds-btn ds-btn-secondary\" href=\"#\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2\"/></svg>Call</a></nav>",
+      "css": ":host{--navy:#0f2140;--navy-3:#1b3666;--cobalt:#1d3c94;--gold:#d6aa4e;--gold-hi:#f2d58a;--gold-deep:#8c6422;--porcelain:#f3f4f6;--ink:#14223d;--ink-soft:#46536d;--on-navy:#f1f3f8;--on-navy-soft:#bfc9dc;--radius:6px;--shadow:0 10px 24px -8px rgba(6,14,32,.55),0 3px 8px -2px rgba(6,14,32,.35)}.ds-btn{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 22px;border:2px solid var(--gold);border-radius:var(--radius);font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:.02em;text-decoration:none;white-space:nowrap;transition:transform .15s ease-out,background-color .2s,color .2s}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.ds-btn svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-dock{display:grid;grid-template-columns:1.5fr 1fr;gap:10px;padding:10px 12px;background:rgba(15,33,64,.97);box-shadow:0 -10px 24px -8px rgba(6,14,32,.6)}.ds-dock .ds-btn{min-height:54px;font-size:16px;padding:0 12px}.ds-btn-primary{background:var(--gold);color:var(--navy)}.ds-btn-primary:hover{background:var(--gold-hi);border-color:var(--gold-hi)}.ds-btn-secondary{background:rgba(15,33,64,.55);color:var(--gold-hi)}.ds-btn-secondary:hover{background:var(--gold);color:var(--navy)}"
+    },
+    {
+      "name": "Waterline Seam",
+      "kind": "custom",
+      "description": "Wave join between grounds: incoming-ground fill with a 3px gold stroke (static snapshot; live version is animated by the shared loop).",
+      "html": "<div class=\"ds-seam-demo\"><svg viewBox=\"0 0 1440 64\" preserveAspectRatio=\"none\"><path class=\"f\" d=\"M0 30C240 18 480 42 720 30S1200 18 1440 30L1440 64L0 64Z\"/><path class=\"l\" d=\"M0 30C240 18 480 42 720 30S1200 18 1440 30\"/></svg></div>",
+      "css": ".ds-seam-demo{background:#0f2140;padding-top:24px}.ds-seam-demo svg{display:block;width:100%;height:48px}.ds-seam-demo .f{fill:#f3f4f6}.ds-seam-demo .l{fill:none;stroke:#d6aa4e;stroke-width:3;vector-effect:non-scaling-stroke}"
+    },
+    {
+      "name": "Tile Wall (static fallback)",
+      "kind": "custom",
+      "description": "Cobalt tiles in gold grout; the live canvas swells, pushes, ripples and carries beads.",
+      "html": "<div class=\"ds-wall\"></div>",
+      "css": ".ds-wall{height:176px;background-color:#1d3c94;background-image:linear-gradient(90deg,#9a7430 3px,transparent 3px),linear-gradient(#9a7430 3px,transparent 3px);background-size:44px 44px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Finished Shower Wall",
+    "overview": "**Creative North Star: \"The Finished Shower Wall\"**\n\nThe whole system is one material: the owner's own cobalt-tile, brass-fixture shower, read as a brand. Navy and gold are not chosen colors; they are the tile body and the grout and trim of a just-finished wall. Navy grounds carry the wall and the work; porcelain grounds are the grout-white between them, where the reading happens. Gold appears as trim (frames, outlines, the waterline) and once as solid metal: the price plaque.\n\nThe wall is alive. On the two navy bookends (hero and close) a canvas draws glossy cobalt tiles that swell as if under running water, shove aside and spring back under a finger or cursor, ripple out from taps, and carry sliding water beads. The owner's job photos are set into that wall as gold-framed tiles that ride the same water. Everything else that moves (section seams, framed photos further down) samples the same swell, so the page has one tide rather than many effects.\n\nDensity is trade-promo direct: heavy uppercase display, short lines, big tap targets, a single gold action repeated at every decision point. Phone is the native surface; desktop is an adaptation of it.",
+    "keyCharacteristics": [
+      "Two grounds only: deep navy and porcelain, alternating, joined by moving gold waterlines.",
+      "Gold is trim and metal, never a text-heavy surface beyond the price plaque and the primary button.",
+      "Heavy (900) uppercase system-sans display; plain 17px body.",
+      "Square-ish, tile-shaped geometry: 4-8px corners, 52px cobalt chips, gold-framed photos.",
+      "One shared animation loop, paused off screen, still under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Two Grounds Rule",
+        "body": "Every section is either navy or porcelain, and they alternate. No third ground, no gradients as grounds, no black.",
+        "section": "colors"
+      },
+      {
+        "name": "The Brass Is Trim Rule",
+        "body": "Gold outlines, frames, strokes and marks. Solid gold surfaces are limited to the primary button and the price plaque. On porcelain, small gold marks use Aged Brass.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cobalt Is Tile Rule",
+        "body": "Cobalt appears only where something is a tile: the wall, and the square chips that hold service icons and step numbers. It is never text and never a section ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shout And Talk Rule",
+        "body": "Headings are 900 uppercase; nothing between 600 and 900 is used for headings, and body is never uppercase. If a line is not a heading, button, or the area line, it is sentence case.",
+        "section": "typography"
+      },
+      {
+        "name": "The Phone Is The Base Rule",
+        "body": "Write base styles for a 390px phone; desktop only ever adds a `min-width: 900px` adaptation. Tap targets are at least 44px; primary actions are 54-58px tall.",
+        "section": "layout"
+      },
+      {
+        "name": "The Objects Cast, Surfaces Don't Rule",
+        "body": "Only things that are physically set into or hung on the wall (photos, plaque, chips, dock) cast shadows. Sections, rows and text never do.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Waterline Rule",
+        "body": "Every ground change is a moving gold waterline seam, never a hard edge or a straight rule.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** keep every ground navy or porcelain, alternating, joined by a moving gold waterline seam.",
+      "**Do** make Text the gold primary and Call the outlined secondary, as one pair of equal height, repeated at hero, close and dock.",
+      "**Do** frame every job photo in a 4px gold border and let it ride the shared swell.",
+      "**Do** drive any new motion from the shared loop and `swell()`, register it for off-screen pausing, and give it a reduced-motion still frame.",
+      "**Do** expose new motion knobs in `TUNE` rather than as literals.",
+      "**Do** use Aged Brass, not Brass Gold, for small gold marks on porcelain.",
+      "**Do** write phone styles as the base and adapt at `min-width: 900px`."
+    ],
+    "donts": [
+      "**Don't** use a black ground, or any section ground other than navy and porcelain.",
+      "**Don't** spread solid gold beyond the primary button and the price plaque.",
+      "**Don't** use cobalt for text or for a section ground; it is tile only.",
+      "**Don't** start a second animation loop or animate anything that keeps running off screen.",
+      "**Don't** set headings in anything but 900 uppercase, or body in uppercase.",
+      "**Don't** cut between sections with a straight edge.",
+      "**Don't** add shadows to sections, rows or text; only set objects cast."
+    ]
+  }
+}

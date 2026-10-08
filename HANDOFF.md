@@ -8,11 +8,11 @@
 - **Sections:** hero (logo, "Results you can be proud of." — their words, pitch, Text + Call, three checks) → gold price plaque (their published bathroom price) → five services, each row one tap to a pre-filled text → recent work (6 photos) → how it works → close (logo, their own quote, area, Text + Call) → footer with "Demo one-pager — free sample."
 - **Contact:** every text link is `sms:+16096495069?&body=…` with a per-service message (decoded and checked); call links `tel:+16096495069`. Sticky Text/Call dock on phones once the hero buttons scroll away (hides again at the closing buttons). Desktop shows the number on the text button.
 - **Tunables:** `TUNE` at the top of the script (tile size, swell speed/amp, push radius, stiffness, damping, ripple, bead counts, seam speed). One CSS section per block.
-- **Weight:** 134 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
+- **Weight:** 139 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
 
 ## Assumptions I made
 - **Price:** the brief's OCR said "FULL RENOVATION"; the full-res flyer clearly reads "FULL BATHROOM RENOVATION $7,000 - $10,000 (LABOR ONLY)". Used that. Confirm it's current before sending.
-- **Service one-liners are inferred** from the photos and their caption, not stated by them: bathrooms "tile, walk-in showers, tubs, niches and vanities" (all visible in photos); decks "stairs and railings, built to last outdoors" (stairs photo); flooring "laid level, from one room to the whole house"; painting "walls, ceilings and trim with clean, sharp lines"; repairs "and home upgrades, big or small" ("home upgrades" is theirs).
+- **Service one-liners are inferred** from the photos and their caption, kept minimal after review: bathrooms "tile, walk-in showers, tubs, niches and vanities" (all visible in photos); decks "Decks, stairs and railings" (stairs photo); flooring "New floors, installed and finished"; painting "Painting with attention to detail" (their phrase); repairs "and home upgrades, big or small" ("home upgrades" is theirs).
 - **Gallery captions** describe what's in each photo; "Kitchen upgrade" is a photo they posted, but kitchens aren't on their service list.
 - **"I" voice:** the closing quote is their caption, lightly cased. The quote byline is the company because the owner's name is unknown.
 - **Area:** kept to their flyer wording, "South Jersey and surrounding areas". BBB's Toms River street address is not on the page (could be a home address).
@@ -24,7 +24,7 @@
 ## Placeholders and gaps
 - Only photos: the six small tiles inside their flyer (~300×220 each). They hold up at the sizes used, but look soft on big retina screens. Full-size originals would help a lot.
 - No before/after pairs, no reviews, no hours, no email, no owner name: nothing about them appears on the page.
-- No `og:image` yet: Facebook link previews need a hosted image URL. Once hosted, point `og:image` at `assets/work-03.webp` (or a 1200×630 card).
+- `og:image` points at `assets/og.jpg` (1200×630 hero capture) via raw.githubusercontent.com. When the page is hosted, switch it to the host's absolute URL and add `og:url`.
 - The Facebook link uses the profile id (page info was restricted to Muse); check it opens the right page.
 
 ## Questions for the owner
@@ -34,6 +34,10 @@
 - Do kitchens count as a service? Any towns you most want to work in?
 - Hours / best times to text? License number to show?
 - Any reviews or past clients happy to be quoted?
+
+## Review round (Impeccable finish reviewer, once)
+Applied: wall no longer rebuilds on scroll-driven resizes (FB/iOS toolbar) and the tile pattern is seeded by position; closing wall visible on phones (copy sits on a navy panel instead of a full scrim); beads spawn only where visible and have a solid body; price plaque is flat gold with "Full bathroom renovation" as its heading (no label-over-big-number); fewer repeated numbers/claims; service copy trimmed to evidence; cooler porcelain (#f3f4f6) instead of cream; gallery graph-paper ground removed and gallery bob driven by the shared swell; desktop feature photo switched to work-04.
+Deferred to you: set the six gallery photos into a tile wall of their own (reviewer's preferred version); wet trails behind sliding beads; moving specular sheen across tiles; whether to cut "How it works" (reviewer says it restates the hero).
 
 ## Ideas not built (yours to pick)
 - **Runner-up world:** steamed shower glass you wipe clear with a finger to reveal their finished work, with condensation beads running down. Very touchable, bathroom-first; swaps in for the tile wall in the hero.
