@@ -156,7 +156,6 @@ p{margin:0;text-wrap:pretty}
 /* ============ Close (navy, second tile wall) ============ */
 .close{--seam-fill:var(--navy);position:relative;isolation:isolate;padding:96px 0 104px;text-align:center;background-color:var(--navy)}
 .close .wall{z-index:-2;top:-47px;height:calc(100% + 47px)}
-.close-scrim{display:none;position:absolute;inset:0;z-index:-1;background:radial-gradient(120% 70% at 50% 46%,rgba(15,33,64,.96) 0,rgba(15,33,64,.9) 48%,rgba(15,33,64,.35) 100%)}
 .close .wrap{position:relative;width:auto;margin:0 max(16px,env(safe-area-inset-left));padding:30px 18px 26px;border-radius:8px;background:rgba(15,33,64,.93);box-shadow:var(--shadow)}
 .close h2{margin:0}
 .close .logo{width:min(300px,78vw);margin:0 auto}
@@ -244,9 +243,7 @@ p{margin:0;text-wrap:pretty}
   .btn{white-space:nowrap}
   .steps{grid-template-columns:repeat(3,1fr);gap:40px}
   .close{padding:110px 0 120px}
-  .close-scrim{display:block}
-  .close .wrap{margin:0 auto;width:100%;padding:0 var(--gutter);background:none;box-shadow:none;border-radius:0}
-  .close .wrap{max-width:1200px}
+  .close .wrap{margin:0 auto;width:fit-content;max-width:min(720px,calc(100% - 2*var(--gutter)));padding:44px 56px 40px}
   .dock{display:none}
   .foot{padding-bottom:36px}
   .foot-grid{grid-template-columns:1fr auto;align-items:center}
@@ -362,7 +359,6 @@ FORM: Single static file, system fonts, heavy uppercase display, navy and porcel
 <section class="sec close" id="contact" data-wall="close" aria-labelledby="close-h">
   <svg class="seam up" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true"><path class="fill"/><path class="line"/></svg>
   <canvas class="wall" aria-hidden="true"></canvas>
-  <div class="close-scrim" aria-hidden="true"></div>
   <div class="wrap">
     <h2 id="close-h"><span class="logo" role="img" aria-label="Signature Home Renovations LLC"></span></h2>
     <p class="quote">“With 15+ years of construction experience, I take pride in delivering reliable service, attention to detail, and results you can be proud of.”</p>

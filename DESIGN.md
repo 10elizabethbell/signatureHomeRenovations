@@ -193,7 +193,7 @@ A two-ground navy/porcelain system with a single metallic accent family (gold, t
 - **Shower Cobalt** (cobalt): the tile body. Fills the static hero fallback and the 52px service/step chips; the canvas varies it across four close hues (around hsl 220-226, 62-72% saturation) so the wall never reads as a flat swatch.
 
 ### Neutral
-- **Flyer Navy** (navy): page ground, hero and close scrims, Work section, dock and secondary-button tint, text on gold. The ground is never black (PRODUCT.md constraint).
+- **Flyer Navy** (navy): page ground, hero scrim, the closing copy panel, Work section, dock and secondary-button tint, text on gold. The ground is never black (PRODUCT.md constraint).
 - **Deep Navy Step** (navy-2): footer ground, one step lighter than the page so the footer reads as a floor.
 - **Navy Frame Fill** (navy-3): the placeholder fill inside photo frames before the image fades in.
 - **Grout-White Porcelain** (porcelain): ground of the light sections (Services, How it works) and the fill of the seam that enters them.

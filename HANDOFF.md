@@ -62,3 +62,7 @@ Ran critique, clarify, audit, harden, optimize, polish, layout, typeset, adapt, 
 - Frame rate on older phones (phone wall is ~160 tiles + 12 beads; desktop ~420 tiles + 30 beads).
 - Headless captures of the canvas at 1440×900 show the CSS fallback (known headless capture quirk); a pixel probe confirmed the canvas animates and responds.
 - Impeccable's detector ran in degraded regex mode (its HTML parser modules aren't installed), so its findings undercount.
+
+## After the pass (2026-10-09)
+- Recent work subhead removed.
+- Closing section on desktop: the full-width navy scrim over the wall is gone; the copy sits on a navy panel sized to it (as on phones), so the rest of the tile wall shows at full color.
