@@ -20,6 +20,15 @@
         ],
         "createdAt": "2026-10-08T21:42:23.249Z",
         "reason": "Claude (pitch-site): the grid is the committed world's literal tile grout (static fallback for the canvas tile wall), per direction contract"
+      },
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-09T01:39:00.136Z",
+        "reason": "Ellie's pitch-site house style: system font stack (Roboto is only the Android system fallback), recorded in ellie-taste.md"
       }
     ]
   }

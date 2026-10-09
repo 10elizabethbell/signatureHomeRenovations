@@ -28,27 +28,12 @@ typography:
     letterSpacing: "-0.01em"
   pitch:
     fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(17px, 4.6vw, 20px)"
+    fontSize: "clamp(17px, 4.6vw, 22px)"
     fontWeight: 400
     lineHeight: 1.4
   pitch-desktop:
     fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "20px"
-    fontWeight: 400
-    lineHeight: 1.4
-  numeral:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "24px"
-    fontWeight: 900
-    lineHeight: 1
-  label-lg:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "18px"
-    fontWeight: 800
-    lineHeight: 1
-  body-sm:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "16px"
+    fontSize: "22px"
     fontWeight: 400
     lineHeight: 1.4
   display:
@@ -65,7 +50,7 @@ typography:
     letterSpacing: "-0.01em"
   title:
     fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "21px"
+    fontSize: "22px"
     fontWeight: 900
     lineHeight: 1.02
     letterSpacing: "0.01em"
@@ -94,7 +79,7 @@ typography:
     letterSpacing: "0.02em"
   small:
     fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "15px"
+    fontSize: "17px"
     fontWeight: 700
     lineHeight: 1.35
 rounded:
@@ -216,14 +201,12 @@ A two-ground navy/porcelain system with a single metallic accent family (gold, t
 ### Hierarchy
 - **Display** (900, clamp(40px, 11.6vw, 88px); desktop clamp(56px, 6vw, 84px), 1.02, uppercase, balanced): the hero headline only. One phrase may be lit in Brass Gold.
 - **Headline** (900, clamp(32px, 8.6vw, 56px), 1.02, uppercase): section heads.
-- **Title** (900, 21px, uppercase, +0.01em): service names, step names, the price line's label.
+- **Title** (900, 22px, uppercase, +0.01em): service names, step names, the price line's label.
 - **Price** (900, clamp(34px, 9.4vw, 52px), 1, -0.02em, tabular figures, ink): the published price figure.
 - **Quote** (600, clamp(19px, 5.2vw, 25px), 1.4, max 30ch): the owner's first-person promise in the close.
-- **Body** (400, 17px, 1.55): all reading copy. Pitch line runs 17-20px at 1.4, max 34ch; section intros max 46ch; step copy max 44ch.
-- **Label** (800, 17px, uppercase, +0.02em): button text; 16px in the dock and phone bar.
-- **Body small** (400, 16px, 1.4): service one-liners, dock labels (800), the top-bar number (800; 18px on desktop).
-- **Numeral** (900, 24px): step numbers in cobalt chips.
-- **Small** (700, 15px): proof checks, captions (400 weight), footer, the service-area line (800, uppercase, +0.04em).
+- **Body** (400, 17px, 1.55): all reading copy, service one-liners, footer, checks and the service-area line. Pitch line runs 17-22px at 1.4, max 34ch; section intros max 46ch; step copy max 44ch.
+- **Label** (800, 17px, uppercase, +0.02em): button text everywhere, including the dock; the top-bar number is 800 at 17px.
+- **Small**: retired. Everything below a title is 17px; hierarchy comes from weight and the 17 → 22 → display jump (detector: flat-type-hierarchy).
 
 ### Named Rules
 **The Shout And Talk Rule.** Headings are 900 uppercase; nothing between 600 and 900 is used for headings, and body is never uppercase. If a line is not a heading, button, or the area line, it is sentence case.
@@ -233,7 +216,7 @@ A two-ground navy/porcelain system with a single metallic accent family (gold, t
 Phone-first in the literal sense: base CSS is the phone layout, and a single `min-width: 900px` query adapts it for desktop (one `max-width: 379px` tweak shrinks the logo and bar phone on very small phones). Content sits in a 1200px max container with a 20px gutter, widening to 40px on desktop.
 
 - **Phone:** single column. Hero shows logo + bar phone, headline, pitch, a stacked full-width button pair (12px gap), three proof checks, then a band six tiles tall where two photo tiles sit in the wall. A fixed dock with the same button pair (1.5fr / 1fr) slides up once the hero buttons scroll away and hides again while the close buttons are visible.
-- **Desktop:** the hero becomes a full-height (up to 860px) wall with a left-to-right navy scrim; copy holds the left ~620px and two photo tiles sit in the open wall to the right. Buttons sit side by side at intrinsic width and show the phone number inline. Services splits into a list (1.15fr) and a sticky side column (price line over a featured photo); the gallery goes from pairs and full-width rows to three across with the panoramas paired, steps go to 3 columns. The dock is removed.
+- **Desktop:** the hero becomes a full-height (up to 860px) wall with a left-to-right navy scrim; copy holds the left ~620px and two photo tiles sit in the open wall to the right. Buttons sit side by side at intrinsic width; the Call button carries the number. Services splits into a list (1.15fr) and a sticky side column (price line over a featured photo); the gallery goes from pairs and full-width rows to three across with the panoramas paired, steps go to 3 columns. The dock is removed.
 - **Rhythm:** sections run roughly 40-64px top and 76-104px bottom on phones, 56-120px on desktop; the extra bottom room leaves space for the next seam to cut in.
 - **Tile grid:** the wall's cell is derived from the viewport (about 44px phone, 60px desktop, rounded so columns fill the width exactly) and exposed as `--cell`, so the hero band and photo tiles land on grout lines.
 
