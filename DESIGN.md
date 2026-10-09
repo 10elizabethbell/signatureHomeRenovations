@@ -71,7 +71,7 @@ typography:
     letterSpacing: "0.01em"
   price:
     fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(30px, 8.4vw, 48px)"
+    fontSize: "clamp(34px, 9.4vw, 52px)"
     fontWeight: 900
     lineHeight: 1
     letterSpacing: "-0.02em"
@@ -130,11 +130,8 @@ components:
   button-secondary-hover:
     backgroundColor: "{colors.gold}"
     textColor: "{colors.navy}"
-  price-plaque:
-    backgroundColor: "{colors.gold}"
-    textColor: "{colors.navy}"
-    rounded: "{rounded.control}"
-    padding: "22px 20px"
+  price-line:
+    textColor: "{colors.ink}"
   service-row:
     textColor: "{colors.ink}"
     padding: "18px 2px"
@@ -166,7 +163,7 @@ components:
 
 **Creative North Star: "The Finished Shower Wall"**
 
-The whole system is one material: the owner's own cobalt-tile, brass-fixture shower, read as a brand. Navy and gold are not chosen colors; they are the tile body and the grout and trim of a just-finished wall. Navy grounds carry the wall and the work; porcelain grounds are the grout-white between them, where the reading happens. Gold appears as trim (frames, outlines, the waterline) and once as solid metal: the price plaque.
+The whole system is one material: the owner's own cobalt-tile, brass-fixture shower, read as a brand. Navy and gold are not chosen colors; they are the tile body and the grout and trim of a just-finished wall. Navy grounds carry the wall and the work; porcelain grounds are the grout-white between them, where the reading happens. Gold appears as trim (frames, outlines, the waterline) and as solid metal only on the primary button.
 
 The wall is alive. On the two navy bookends (hero and close) a canvas draws glossy cobalt tiles that swell as if under running water, shove aside and spring back under a finger or cursor, ripple out from taps, and carry sliding water beads. The owner's job photos are set into that wall as gold-framed tiles that ride the same water. Everything else that moves (section seams, framed photos further down) samples the same swell, so the page has one tide rather than many effects.
 
@@ -174,7 +171,7 @@ Density is trade-promo direct: heavy uppercase display, short lines, big tap tar
 
 **Key Characteristics:**
 - Two grounds only: deep navy and porcelain, alternating, joined by moving gold waterlines.
-- Gold is trim and metal, never a text-heavy surface beyond the price plaque and the primary button.
+- Gold is trim and metal, never a text-heavy surface beyond the primary button.
 - Heavy (900) uppercase system-sans display; plain 17px body.
 - Square-ish, tile-shaped geometry: 4-8px corners, 52px cobalt chips, gold-framed photos.
 - One shared animation loop, paused off screen, still under reduced motion.
@@ -184,9 +181,9 @@ Density is trade-promo direct: heavy uppercase display, short lines, big tap tar
 A two-ground navy/porcelain system with a single metallic accent family (gold, three weights) and one saturated material color (cobalt) reserved for tile surfaces.
 
 ### Primary
-- **Brass Gold** (gold): the primary action fill, every photo frame border, the waterline stroke, focus rings, checkmarks, the `em` highlight in the hero headline, and the price plaque's solid face.
+- **Brass Gold** (gold): the primary action fill, every photo frame border, the waterline stroke, focus rings, checkmarks, the `em` highlight in the hero headline.
 - **Polished Brass** (gold-hi): gold's lit state. Primary-button hover, secondary-button text, phone-number link in the bar, gold glyphs on cobalt chips, footer links, the service-area line.
-- **Aged Brass** (gold-deep): gold for small marks on porcelain, where Brass Gold would fail contrast: the outlined arrow discs on service rows and link underlines in the steps.
+- **Aged Brass** (gold-deep): gold for small marks on porcelain, where Brass Gold would fail contrast: the plain arrow cues on service rows.
 - **Grout Gold** (grout-gold): the grout between tiles, drawn by the canvas and by the static CSS grid fallback. Never used as a UI color.
 
 ### Secondary
@@ -205,7 +202,7 @@ A two-ground navy/porcelain system with a single metallic accent family (gold, t
 ### Named Rules
 **The Two Grounds Rule.** Every section is either navy or porcelain, and they alternate. No third ground, no gradients as grounds, no black.
 
-**The Brass Is Trim Rule.** Gold outlines, frames, strokes and marks. Solid gold surfaces are limited to the primary button and the price plaque. On porcelain, small gold marks use Aged Brass.
+**The Brass Is Trim Rule.** Gold outlines, frames, strokes and marks. Solid gold surfaces are limited to the primary button.
 
 **The Cobalt Is Tile Rule.** Cobalt appears only where something is a tile: the wall, and the square chips that hold service icons and step numbers. It is never text and never a section ground.
 
@@ -219,8 +216,8 @@ A two-ground navy/porcelain system with a single metallic accent family (gold, t
 ### Hierarchy
 - **Display** (900, clamp(40px, 11.6vw, 88px); desktop clamp(56px, 6vw, 84px), 1.02, uppercase, balanced): the hero headline only. One phrase may be lit in Brass Gold.
 - **Headline** (900, clamp(32px, 8.6vw, 56px), 1.02, uppercase): section heads.
-- **Title** (900, 21px, uppercase, +0.01em): service names, step names, the plaque's label.
-- **Price** (900, clamp(30px, 8.4vw, 48px), 1, -0.02em, tabular figures): the published price figure on the plaque.
+- **Title** (900, 21px, uppercase, +0.01em): service names, step names, the price line's label.
+- **Price** (900, clamp(34px, 9.4vw, 52px), 1, -0.02em, tabular figures, ink): the published price figure.
 - **Quote** (600, clamp(19px, 5.2vw, 25px), 1.4, max 30ch): the owner's first-person promise in the close.
 - **Body** (400, 17px, 1.55): all reading copy. Pitch line runs 17-20px at 1.4, max 34ch; section intros max 46ch; step copy max 44ch.
 - **Label** (800, 17px, uppercase, +0.02em): button text; 16px in the dock and phone bar.
@@ -236,7 +233,7 @@ A two-ground navy/porcelain system with a single metallic accent family (gold, t
 Phone-first in the literal sense: base CSS is the phone layout, and a single `min-width: 900px` query adapts it for desktop (one `max-width: 379px` tweak shrinks the logo and bar phone on very small phones). Content sits in a 1200px max container with a 20px gutter, widening to 40px on desktop.
 
 - **Phone:** single column. Hero shows logo + bar phone, headline, pitch, a stacked full-width button pair (12px gap), three proof checks, then a band six tiles tall where two photo tiles sit in the wall. A fixed dock with the same button pair (1.5fr / 1fr) slides up once the hero buttons scroll away and hides again while the close buttons are visible.
-- **Desktop:** the hero becomes a full-height (up to 860px) wall with a left-to-right navy scrim; copy holds the left ~620px and three photo tiles sit in the open wall to the right. Buttons sit side by side at intrinsic width and show the phone number inline. Services splits into a list (1.15fr) and a sticky side column (price plaque over a featured photo); the gallery goes 2 to 3 columns, steps go to 3 columns. The dock is removed.
+- **Desktop:** the hero becomes a full-height (up to 860px) wall with a left-to-right navy scrim; copy holds the left ~620px and three photo tiles sit in the open wall to the right. Buttons sit side by side at intrinsic width and show the phone number inline. Services splits into a list (1.15fr) and a sticky side column (price line over a featured photo); the gallery goes 2 to 3 columns, steps go to 3 columns. The dock is removed.
 - **Rhythm:** sections run roughly 40-64px top and 76-104px bottom on phones, 56-120px on desktop; the extra bottom room leaves space for the next seam to cut in.
 - **Tile grid:** the wall's cell is derived from the viewport (about 44px phone, 60px desktop, rounded so columns fill the width exactly) and exposed as `--cell`, so the hero band and photo tiles land on grout lines.
 
@@ -244,21 +241,20 @@ Phone-first in the literal sense: base CSS is the phone layout, and a single `mi
 
 ## Elevation & Depth
 
-Depth is physical, not interface chrome: tiles are lit by the swell, photos are framed objects that sit proud of the wall, and the brass plaque is a hung plate. Surfaces otherwise stay flat; porcelain sections carry no shadows except under objects set into them.
+Depth is physical, not interface chrome: tiles are lit by the swell, photos are framed objects that sit proud of the wall. Surfaces otherwise stay flat; porcelain sections carry no shadows except under objects set into them.
 
 ### Shadow Vocabulary
 - **Set Object** (`0 10px 24px -8px rgba(6,14,32,.55), 0 3px 8px -2px rgba(6,14,32,.35)`): photo tiles, gallery frames, the phone close card.
-- **Hung Plaque** (`0 18px 30px -16px rgba(0,0,0,.32), 0 4px 10px -4px rgba(0,0,0,.2)`): the gold price plaque on porcelain.
 - **Glazed Chip** (`inset 0 -6px 10px rgba(0,0,0,.3), 0 6px 12px -6px rgba(0,0,0,.35)`): cobalt chips, an inset shade so they read as glazed tiles.
 - **Feature Lift** (`0 24px 40px -18px rgba(0,0,0,.35)`): the desktop feature photo beside the services.
 - **Dock Lift** (`0 -10px 24px -8px rgba(6,14,32,.6)`): the fixed bottom dock, casting upward.
 
 ### Named Rules
-**The Objects Cast, Surfaces Don't Rule.** Only things that are physically set into or hung on the wall (photos, plaque, chips, dock) cast shadows. Sections, rows and text never do.
+**The Objects Cast, Surfaces Don't Rule.** Only things that are physically set into or hung on the wall (photos, chips, dock) cast shadows. Sections, rows and text never do.
 
 ## Shapes
 
-Tile geometry throughout. Corners are small and consistent with glazed ceramic: 4px on gold photo frames (with a 4px gold border, 5px on the desktop feature), 5px on cobalt chips, 6px on buttons and the plaque, 8px on the phone close card. The only circles are the 44px outlined arrow discs. Canvas tiles have about 7% corner radius and sit in a 3px grout line.
+Tile geometry throughout. Corners are small and consistent with glazed ceramic: 4px on gold photo frames (with a 4px gold border, 5px on the desktop feature), 5px on cobalt chips, 6px on buttons, 8px on the phone close card. Canvas tiles have about 7% corner radius and sit in a 3px grout line.
 
 Section joins are not straight: each section opens with a waterline seam, an SVG wave (48px tall, 64px desktop) whose fill is the incoming ground and whose top edge is a 3px gold stroke. The line is a sum of three sines driven by the shared loop, so the color boundary itself drifts.
 
@@ -274,11 +270,11 @@ Tactile and heavy, one pair everywhere.
 - **Hover (hover-capable devices only):** primary lifts to Polished Brass; secondary fills gold with navy text. **Active:** scale to 0.97 over 150ms. **Focus:** 3px gold outline, 3px offset.
 - **Phone number:** desktop appends the number to the Text button; phones keep it on the Call button.
 
-### Price Plaque
-The one solid-metal surface. A gold plate (6px corners, 22px x 20px padding) with the uppercase label, the price in the Price style, a dark-brown note, and an arrow disc. The whole plaque is a single tap target that opens a pre-filled text.
+### Price Line
+Information, not an action. Plain type on the porcelain: the Title-style label "Full bathroom renovation", the price in the Price style (ink), and a 17px Ink Soft note led by a bold "Labor only." No box, fill, shadow, arrow or link. On phones it follows the service list; on desktop it heads the sticky side column above the feature photo.
 
 ### Service Rows
-A hairline-ruled list on porcelain. Each row (min 84px) is one link: a 52px cobalt chip with a gold line icon, a Title plus one-line description, and an Aged Brass arrow disc that fills navy with Polished Brass on hover. Each row opens a text pre-filled for that service.
+A hairline-ruled list on porcelain. Each row (min 84px) is one link: a 52px cobalt chip with a gold line icon, a Title plus one-line description, and a small plain Aged Brass arrow (no circle) that nudges right on hover. The row is the tap target; the arrow is only a cue. Each row opens a text pre-filled for that service.
 
 ### Cobalt Chips
 52px square glazed tiles (5px corners, Glazed Chip shadow) holding a 28px gold stroke icon (service rows) or a 900-weight number (steps). They are small pieces of the wall carried onto porcelain.
@@ -324,7 +320,8 @@ A canvas behind the hero and close, drawn by one `TileWall` per host and tuned o
 
 ### Don't:
 - **Don't** use a black ground, or any section ground other than navy and porcelain.
-- **Don't** spread solid gold beyond the primary button and the price plaque.
+- **Don't** spread solid gold beyond the primary button.
+- **Don't** make information look clickable. The price is plain type: no box, no fill, no shadow, no arrow, no link (Ellie, 2026-10-08: too many things in the services section asked to be clicked).
 - **Don't** use cobalt for text or for a section ground; it is tile only.
 - **Don't** start a second animation loop or animate anything that keeps running off screen.
 - **Don't** set headings in anything but 900 uppercase, or body in uppercase.

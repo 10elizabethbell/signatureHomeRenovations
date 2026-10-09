@@ -241,11 +241,11 @@
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Service names, step names, plaque label."
+        "purpose": "Service names, step names, price line label."
       },
       "price": {
         "displayName": "Price",
-        "purpose": "The published price figure on the plaque, tabular figures."
+        "purpose": "The published price figure, plain ink type, tabular figures."
       },
       "body": {
         "displayName": "Body",
@@ -269,11 +269,6 @@
         "name": "set-object",
         "value": "0 10px 24px -8px rgba(6,14,32,.55), 0 3px 8px -2px rgba(6,14,32,.35)",
         "purpose": "Photo tiles, gallery frames, phone close card."
-      },
-      {
-        "name": "hung-plaque",
-        "value": "0 18px 30px -16px rgba(0,0,0,.32), 0 4px 10px -4px rgba(0,0,0,.2)",
-        "purpose": "The gold price plaque on porcelain."
       },
       {
         "name": "glazed-chip",
@@ -376,12 +371,12 @@
       "css": ":host{--navy:#0f2140;--navy-3:#1b3666;--cobalt:#1d3c94;--gold:#d6aa4e;--gold-hi:#f2d58a;--gold-deep:#8c6422;--porcelain:#f3f4f6;--ink:#14223d;--ink-soft:#46536d;--on-navy:#f1f3f8;--on-navy-soft:#bfc9dc;--radius:6px;--shadow:0 10px 24px -8px rgba(6,14,32,.55),0 3px 8px -2px rgba(6,14,32,.35)}.ds-ground{background:var(--navy);padding:24px}.ds-btn{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:58px;padding:0 22px;border:2px solid var(--gold);border-radius:var(--radius);font-weight:800;font-size:17px;text-transform:uppercase;letter-spacing:.02em;text-decoration:none;white-space:nowrap;transition:transform .15s ease-out,background-color .2s,color .2s}.ds-btn:active{transform:scale(.97)}.ds-btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.ds-btn svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-btn-secondary{background:rgba(15,33,64,.55);color:var(--gold-hi)}.ds-btn-secondary:hover{background:var(--gold);color:var(--navy)}"
     },
     {
-      "name": "Price Plaque",
+      "name": "Price Line",
       "kind": "card",
-      "refersTo": "price-plaque",
+      "refersTo": "price-line",
       "description": "The one solid-gold plate: label, price, note, arrow disc; one tap target.",
-      "html": "<div class=\"ds-ground\"><a class=\"ds-plaque\" href=\"#\"><span class=\"ds-k\">Full bathroom renovation</span><span class=\"ds-v\">$7,000–$10,000</span><span class=\"ds-n\">Labor only. Fair and honest pricing, and the estimate is free.</span><span class=\"ds-go\"><svg viewBox=\"0 0 24 24\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></div>",
-      "css": ":host{--navy:#0f2140;--navy-3:#1b3666;--cobalt:#1d3c94;--gold:#d6aa4e;--gold-hi:#f2d58a;--gold-deep:#8c6422;--porcelain:#f3f4f6;--ink:#14223d;--ink-soft:#46536d;--on-navy:#f1f3f8;--on-navy-soft:#bfc9dc;--radius:6px;--shadow:0 10px 24px -8px rgba(6,14,32,.55),0 3px 8px -2px rgba(6,14,32,.35)}.ds-ground{background:var(--porcelain);padding:24px}.ds-go{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:2px solid currentColor;flex:none;transition:background-color .2s,color .2s}.ds-go svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.ds-plaque{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px 14px;padding:22px 20px;border-radius:var(--radius);text-decoration:none;color:var(--navy);background:var(--gold);box-shadow:0 18px 30px -16px rgba(0,0,0,.32),0 4px 10px -4px rgba(0,0,0,.2)}.ds-k{grid-column:1/-1;font-weight:900;text-transform:uppercase;font-size:21px;line-height:1.1}.ds-v{grid-column:1/-1;white-space:nowrap;font-weight:900;font-size:40px;line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}.ds-n{grid-column:1/2;font-size:15px;font-weight:700;color:#3a2a0c}.ds-plaque .ds-go{grid-row:3;grid-column:2}.ds-plaque:hover .ds-go{background:var(--navy);color:var(--gold-hi);border-color:var(--navy)}.ds-plaque:focus-visible{outline:3px solid var(--gold);outline-offset:3px}"
+      "html": "<div class=\"ds-ground\"><div class=\"ds-price\"><h3 class=\"ds-k\">Full bathroom renovation</h3><p class=\"ds-v\">$7,000–$10,000</p><p class=\"ds-n\"><strong>Labor only.</strong> Fair and honest pricing, and the estimate is free.</p></div></div>",
+      "css": ":host{--porcelain:#f3f4f6;--ink:#14223d;--ink-soft:#46536d;font-family:-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,sans-serif}.ds-ground{background:var(--porcelain);padding:24px}.ds-k{margin:0;font-weight:900;text-transform:uppercase;font-size:21px;line-height:1.02;color:var(--ink)}.ds-v{margin:8px 0 0;font-weight:900;font-size:clamp(34px,9.4vw,52px);line-height:1;letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}.ds-n{margin:10px 0 0;font-size:17px;line-height:1.55;color:var(--ink-soft);max-width:34ch}.ds-n strong{color:var(--ink);font-weight:800}"
     },
     {
       "name": "Service Row",
@@ -432,10 +427,10 @@
   ],
   "narrative": {
     "northStar": "The Finished Shower Wall",
-    "overview": "**Creative North Star: \"The Finished Shower Wall\"**\n\nThe whole system is one material: the owner's own cobalt-tile, brass-fixture shower, read as a brand. Navy and gold are not chosen colors; they are the tile body and the grout and trim of a just-finished wall. Navy grounds carry the wall and the work; porcelain grounds are the grout-white between them, where the reading happens. Gold appears as trim (frames, outlines, the waterline) and once as solid metal: the price plaque.\n\nThe wall is alive. On the two navy bookends (hero and close) a canvas draws glossy cobalt tiles that swell as if under running water, shove aside and spring back under a finger or cursor, ripple out from taps, and carry sliding water beads. The owner's job photos are set into that wall as gold-framed tiles that ride the same water. Everything else that moves (section seams, framed photos further down) samples the same swell, so the page has one tide rather than many effects.\n\nDensity is trade-promo direct: heavy uppercase display, short lines, big tap targets, a single gold action repeated at every decision point. Phone is the native surface; desktop is an adaptation of it.",
+    "overview": "**Creative North Star: \"The Finished Shower Wall\"**\n\nThe whole system is one material: the owner's own cobalt-tile, brass-fixture shower, read as a brand. Navy and gold are not chosen colors; they are the tile body and the grout and trim of a just-finished wall. Navy grounds carry the wall and the work; porcelain grounds are the grout-white between them, where the reading happens. Gold appears as trim (frames, outlines, the waterline) and as solid metal only on the primary button.\n\nThe wall is alive. On the two navy bookends (hero and close) a canvas draws glossy cobalt tiles that swell as if under running water, shove aside and spring back under a finger or cursor, ripple out from taps, and carry sliding water beads. The owner's job photos are set into that wall as gold-framed tiles that ride the same water. Everything else that moves (section seams, framed photos further down) samples the same swell, so the page has one tide rather than many effects.\n\nDensity is trade-promo direct: heavy uppercase display, short lines, big tap targets, a single gold action repeated at every decision point. Phone is the native surface; desktop is an adaptation of it.",
     "keyCharacteristics": [
       "Two grounds only: deep navy and porcelain, alternating, joined by moving gold waterlines.",
-      "Gold is trim and metal, never a text-heavy surface beyond the price plaque and the primary button.",
+      "Gold is trim and metal, never a text-heavy surface beyond the primary button.",
       "Heavy (900) uppercase system-sans display; plain 17px body.",
       "Square-ish, tile-shaped geometry: 4-8px corners, 52px cobalt chips, gold-framed photos.",
       "One shared animation loop, paused off screen, still under reduced motion."
@@ -448,7 +443,7 @@
       },
       {
         "name": "The Brass Is Trim Rule",
-        "body": "Gold outlines, frames, strokes and marks. Solid gold surfaces are limited to the primary button and the price plaque. On porcelain, small gold marks use Aged Brass.",
+        "body": "Gold outlines, frames, strokes and marks. Solid gold surfaces are limited to the primary button.",
         "section": "colors"
       },
       {
@@ -468,7 +463,7 @@
       },
       {
         "name": "The Objects Cast, Surfaces Don't Rule",
-        "body": "Only things that are physically set into or hung on the wall (photos, plaque, chips, dock) cast shadows. Sections, rows and text never do.",
+        "body": "Only things that are physically set into or hung on the wall (photos, chips, dock) cast shadows. Sections, rows and text never do.",
         "section": "elevation"
       },
       {
@@ -488,7 +483,8 @@
     ],
     "donts": [
       "**Don't** use a black ground, or any section ground other than navy and porcelain.",
-      "**Don't** spread solid gold beyond the primary button and the price plaque.",
+      "**Don't** spread solid gold beyond the primary button.",
+      "**Don't** make information look clickable. The price is plain type: no box, no fill, no shadow, no arrow, no link (Ellie, 2026-10-08: too many things in the services section asked to be clicked).",
       "**Don't** use cobalt for text or for a section ground; it is tile only.",
       "**Don't** start a second animation loop or animate anything that keeps running off screen.",
       "**Don't** set headings in anything but 900 uppercase, or body in uppercase.",

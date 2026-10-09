@@ -100,15 +100,15 @@ p{margin:0}
 .sec-head h2{font-size:clamp(32px,8.6vw,56px)}
 .sec-head p{margin-top:10px;font-size:17px;color:var(--ink-soft);max-width:46ch}
 .light .sec-head h2{color:var(--ink)}
-/* price plaque: brushed gold, like the brass in their cobalt shower */
-.plaque{position:relative;display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px 14px;padding:22px 20px;border-radius:var(--radius);text-decoration:none;color:var(--navy);
-  background:var(--gold);box-shadow:0 18px 30px -16px rgba(0,0,0,.32),0 4px 10px -4px rgba(0,0,0,.2)}
-.plaque-k{grid-column:1/-1;font-weight:900;text-transform:uppercase;font-size:21px;line-height:1.1}
-.plaque-v{grid-column:1/-1;white-space:nowrap;font-weight:900;font-size:clamp(30px,8.4vw,48px);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.plaque-n{grid-column:1/2;font-size:15px;font-weight:700;color:#3a2a0c}
-.plaque .go{grid-row:3;grid-column:2}
-.go{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:2px solid currentColor;flex:none}
-.go .icon{width:20px;height:20px}
+/* price: information, not an action. Plain type on the porcelain, no box, no link */
+.price{padding-top:4px}
+.price-k{font-size:21px;color:var(--ink)}
+.price-v{margin-top:8px;font-weight:900;font-size:clamp(34px,9.4vw,52px);line-height:1;letter-spacing:-.02em;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.price-n{margin-top:10px;font-size:17px;color:var(--ink-soft);max-width:34ch}
+.price-n strong{color:var(--ink);font-weight:800}
+/* row cue: one small plain arrow, not a button */
+.go{display:grid;place-items:center;width:28px;height:28px;flex:none}
+.go .icon{width:22px;height:22px}
 .svc-list{list-style:none;margin:0;padding:0;border-top:1px solid #d3d9e3}
 .svc{display:flex;align-items:center;gap:16px;padding:18px 2px;min-height:84px;border-bottom:1px solid #d3d9e3;text-decoration:none;color:var(--ink);-webkit-tap-highlight-color:transparent}
 .svc-ico{display:grid;place-items:center;width:52px;height:52px;flex:none;border-radius:5px;background:var(--cobalt);color:var(--gold-hi);box-shadow:inset 0 -6px 10px rgba(0,0,0,.3),0 6px 12px -6px rgba(0,0,0,.35)}
@@ -116,13 +116,12 @@ p{margin:0}
 .svc-t{flex:1;min-width:0}
 .svc-t h3{font-size:21px;letter-spacing:.01em}
 .svc-t p{margin-top:4px;font-size:16px;line-height:1.4;color:var(--ink-soft)}
-.svc .go{color:var(--gold-deep);transition:background-color .2s,color .2s}
+.svc .go{color:var(--gold-deep);transition:transform .2s ease-out}
 @media (hover:hover){
-  .svc:hover .go{background:var(--navy);border-color:var(--navy);color:var(--gold-hi)}
-  .plaque:hover .go{background:var(--navy);color:var(--gold-hi);border-color:var(--navy)}
+  .svc:hover .go{transform:translateX(4px)}
 }
 .feature{display:none}
-.side{order:-1}
+.side{margin-top:4px}
 
 /* ============ Work (navy, tiled ground) ============ */
 .work{--seam-fill:var(--navy);padding:44px 0 92px;
@@ -225,7 +224,7 @@ THESIS: Their best shower (cobalt tile, brass fixtures) is already their brand: 
 OWN-WORLD: A just-finished tiled shower wall. Tiles swell like they sit under running water, ripple out from a fingertip, and water beads slide down them and get pushed aside. Their six job photos are set into the wall as gold-framed tiles that ride the same ripples.
 STORY: Results you can be proud of (their words) → the published bathroom price → five services, each one tap to text → the real work → text, free estimate, done → their own promise, the area, the number.
 FIRST VIEWPORT (phone 390x~740): logo, benefit headline, one-line pitch with South Jersey, Text and Call buttons, three proof checks, and the living wall with two photo tiles directly under the buttons.
-FORM: Single static file, system fonts, heavy uppercase display, navy and porcelain sections joined by moving waterline seams. Gold metallic only for the price plaque and trim.
+FORM: Single static file, system fonts, heavy uppercase display, navy and porcelain sections joined by moving waterline seams. Gold only as trim, buttons and photo frames; the price is plain type.
 -->
 <header class="hero" id="top" data-wall="hero">
   <canvas class="wall" aria-hidden="true"></canvas>
@@ -286,12 +285,11 @@ FORM: Single static file, system fonts, heavy uppercase display, navy and porcel
         <span class="go" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
     </ul>
     <div class="side">
-      <a class="plaque" href="sms:+16096495069" data-sms="bathrooms">
-        <span class="plaque-k">Full bathroom renovation</span>
-        <span class="plaque-v">$7,000–$10,000</span>
-        <span class="plaque-n">Labor only. Fair and honest pricing, and the estimate is free.</span>
-        <span class="go" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-      </a>
+      <div class="price">
+        <h3 class="price-k">Full bathroom renovation</h3>
+        <p class="price-v">$7,000–$10,000</p>
+        <p class="price-n"><strong>Labor only.</strong> Fair and honest pricing, and the estimate is free.</p>
+      </div>
       <figure class="feature" data-float><img data-img="work-04" alt="" draggable="false"></figure>
     </div>
   </div>
