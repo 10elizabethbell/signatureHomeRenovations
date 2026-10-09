@@ -336,3 +336,7 @@ A canvas behind the hero and close, drawn by one `TileWall` per host and tuned o
 - **Don't** set headings in anything but 900 uppercase, or body in uppercase.
 - **Don't** cut between sections with a straight edge.
 - **Don't** add shadows to sections, rows or text; only set objects cast.
+
+## Removed (2026-10-09)
+- **Dock:** the sticky phone Text/Call bar is gone (Ellie's call). Ignore the Dock component, Dock Lift shadow, dock-slide motion and the dock rule above; Text/Call pairs now appear only at the hero and the close.
+- **Close scrim:** the desktop full-width navy scrim over the closing wall is gone; the copy sits on a navy panel sized to it at every width.

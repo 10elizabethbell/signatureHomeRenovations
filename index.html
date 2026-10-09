@@ -165,7 +165,7 @@ p{margin:0;text-wrap:pretty}
 .close .cta{max-width:440px;margin:26px auto 0}
 
 /* ============ Footer ============ */
-.foot{background:var(--navy-2);color:var(--on-navy-soft);padding:30px 0 calc(110px + env(safe-area-inset-bottom));font-size:17px}
+.foot{background:var(--navy-2);color:var(--on-navy-soft);padding:30px 0 calc(30px + env(safe-area-inset-bottom));font-size:17px}
 .foot-grid{display:grid;gap:14px}
 .foot strong{color:#fff;font-weight:800}
 .foot a{color:var(--gold-hi);font-weight:700;text-underline-offset:3px}
@@ -173,9 +173,6 @@ p{margin:0;text-wrap:pretty}
 .foot-links a{display:inline-flex;align-items:center;min-height:44px}
 
 /* ============ Sticky phone bar ============ */
-.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;display:grid;grid-template-columns:1.5fr 1fr;gap:10px;padding:10px max(12px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));background:rgba(15,33,64,.97);box-shadow:0 -10px 24px -8px rgba(6,14,32,.6);transform:translateY(110%);visibility:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),visibility 0s .35s}
-.dock.show{transform:none;visibility:visible;transition-delay:0s}
-.dock .btn{white-space:nowrap;min-height:54px;font-size:17px;padding:0 12px}
 
 /* ============ Tablet portrait (phone layout, kept from stretching) ============ */
 @media (min-width:600px) and (max-width:899px){
@@ -197,7 +194,6 @@ p{margin:0;text-wrap:pretty}
   .pitch{margin-top:8px}
   .cta{grid-template-columns:auto auto;justify-content:start;margin-top:14px}
   .checks{display:none}
-  .dock .btn{min-height:46px}
 }
 
 /* ============ Desktop adaptation ============ */
@@ -243,12 +239,11 @@ p{margin:0;text-wrap:pretty}
   .steps{grid-template-columns:repeat(3,1fr);gap:40px}
   .close{padding:110px 0 120px}
   .close .wrap{margin:0 auto;width:fit-content;max-width:min(720px,calc(100% - 2*var(--gutter)));padding:44px 56px 40px}
-  .dock{display:none}
   .foot{padding-bottom:36px}
   .foot-grid{grid-template-columns:1fr auto;align-items:center}
 }
 @media (max-width:899px){ .hero-scrim{display:none} }
-@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} .dock,.btn{transition:none} }
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} .btn{transition:none} }
 </style>
 </head>
 <body>
@@ -383,10 +378,6 @@ FORM: Single static file, system fonts, heavy uppercase display, navy and porcel
   </div>
 </footer>
 
-<nav class="dock" id="dock" aria-label="Contact">
-  <a class="btn btn-primary" href="sms:+16096495069" data-sms="general"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></svg>Text estimate</a>
-  <a class="btn btn-secondary" href="tel:+16096495069"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 7 7L16 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>Call</a>
-</nav>
 
 <script>
 /* ===== Tunables: Ellie, the knobs live here ===== */
@@ -428,17 +419,6 @@ var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     var body = SMS[links[i].getAttribute('data-sms')];
     if (body) links[i].href = 'sms:' + TUNE.phone + '?&body=' + encodeURIComponent(body);
   }
-})();
-
-/* ===== Sticky text/call dock (phones) ===== */
-(function(){
-  // hidden while the hero copy, the service rows (already text links), the closing buttons or the footer are on screen
-  var dock = document.getElementById('dock');
-  if (!('IntersectionObserver' in window)) { dock.classList.add('show'); return; }
-  var watch = [document.querySelector('.hero-copy'), document.querySelector('.svc-list'), document.getElementById('closeCta'), document.querySelector('.foot')];
-  var vis = watch.map(function(){ return false; }); vis[0] = true;
-  function upd(){ dock.classList.toggle('show', vis.indexOf(true) < 0); }
-  watch.forEach(function(el, i){ new IntersectionObserver(function(e){ vis[i] = e[0].isIntersecting; upd(); }).observe(el); });
 })();
 
 /* ===== Shared pointer: mouse and finger both ===== */
