@@ -68,3 +68,4 @@ Ran critique, clarify, audit, harden, optimize, polish, layout, typeset, adapt, 
 - Closing section on desktop: the full-width navy scrim over the wall is gone; the copy sits on a navy panel sized to it (as on phones), so the rest of the tile wall shows at full color.
 - Footer "Demo one-pager — free sample." line removed (Ellie, via another session).
 - Sticky phone Text/Call dock removed (Ellie, via another session); footer bottom padding that made room for it reduced. Contact is now the hero buttons, service rows, closing buttons and footer links.
+- Favicon: the gold script "S" from their logo on flyer navy (`assets/favicon-32.png`, `assets/favicon-180.png` for home-screen icons); the full wordmark is unreadable at tab size.
