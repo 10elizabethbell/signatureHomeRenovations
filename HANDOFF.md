@@ -5,7 +5,7 @@
 ## What's built
 - **World:** a wet cobalt-tile shower wall with gold grout, taken from their best photo (cobalt tile + brass fixtures = their navy + gold flyer). Navy and porcelain sections joined by moving waterline seams with a gold edge.
 - **Signature element:** canvas tile wall in the hero and the closing section. Tiles catch the light as a three-sine swell passes, bulge slightly, get shoved and carried by mouse or finger and spring back with a wobble; taps and fast swipes send ripple rings; water beads hang, slide down, get pushed aside, and fast swipes shed new ones. Their photos sit in the wall as gold-framed tiles that ride the same water. Gallery photos and the desktop feature photo bob and dodge the pointer.
-- **Sections:** hero (logo, "Results you can be proud of." — their words, pitch, Text + Call, three checks) → five services, each row one tap to a pre-filled text (small plain arrow cue), with their published bathroom price as plain, non-clickable type after the list (beside it on desktop) → recent work (6 photos) → how it works → close (logo, their own quote, area, Text + Call) → footer with "Demo one-pager — free sample."
+- **Sections:** hero (logo, "Results you can be proud of." — their words, pitch, Text + Call, three checks) → five services, each row one tap to a pre-filled text (small plain arrow cue), with their published bathroom price as plain, non-clickable type after the list (beside it on desktop) → recent work (6 photos) → how it works → close (logo, their own quote, area, Text + Call) → footer (Call, Text, Facebook)
 - **Contact:** every text link is `sms:+16096495069?&body=…` with a per-service message (decoded and checked); call links `tel:+16096495069`. Sticky Text/Call dock on phones once the hero buttons scroll away (hides again at the closing buttons). Desktop shows the number on the text button.
 - **Tunables:** `TUNE` at the top of the script (tile size, swell speed/amp, push radius, stiffness, damping, ripple, bead counts, seam speed). One CSS section per block.
 - **Weight:** 242 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
@@ -66,3 +66,4 @@ Ran critique, clarify, audit, harden, optimize, polish, layout, typeset, adapt, 
 ## After the pass (2026-10-09)
 - Recent work subhead removed.
 - Closing section on desktop: the full-width navy scrim over the wall is gone; the copy sits on a navy panel sized to it (as on phones), so the rest of the tile wall shows at full color.
+- Footer "Demo one-pager — free sample." line removed (Ellie, via another session).
