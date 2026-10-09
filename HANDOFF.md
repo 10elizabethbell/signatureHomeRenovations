@@ -8,12 +8,12 @@
 - **Sections:** hero (logo, "Results you can be proud of." — their words, pitch, Text + Call, three checks) → gold price plaque (their published bathroom price) → five services, each row one tap to a pre-filled text → recent work (6 photos) → how it works → close (logo, their own quote, area, Text + Call) → footer with "Demo one-pager — free sample."
 - **Contact:** every text link is `sms:+16096495069?&body=…` with a per-service message (decoded and checked); call links `tel:+16096495069`. Sticky Text/Call dock on phones once the hero buttons scroll away (hides again at the closing buttons). Desktop shows the number on the text button.
 - **Tunables:** `TUNE` at the top of the script (tile size, swell speed/amp, push radius, stiffness, damping, ripple, bead counts, seam speed). One CSS section per block.
-- **Weight:** 150 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
+- **Weight:** 324 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
 
 ## Assumptions I made
 - **Price:** the brief's OCR said "FULL RENOVATION"; the full-res flyer clearly reads "FULL BATHROOM RENOVATION $7,000 - $10,000 (LABOR ONLY)". Used that. Confirm it's current before sending.
 - **Service one-liners are inferred** from the photos and their caption, kept minimal after review: bathrooms "tile, walk-in showers, tubs, niches and vanities" (all visible in photos); decks "Decks, stairs and railings" (stairs photo); flooring "New floors, installed and finished"; painting "Painting with attention to detail" (their phrase); repairs "and home upgrades, big or small" ("home upgrades" is theirs).
-- **Gallery captions** describe what's in each photo; "Kitchen upgrade" is a photo they posted, but kitchens aren't on their service list.
+- **Gallery:** no captions (Ellie's call); alt text describes each photo. Kitchens and the sunroom floor are their posted work but kitchens aren't on their service list.
 - **"I" voice:** the closing quote is their caption, lightly cased. The quote byline is the company because the owner's name is unknown.
 - **Area:** kept to their flyer wording, "South Jersey and surrounding areas". BBB's Toms River street address is not on the page (could be a home address).
 - **Phone:** flyer number only. BBB's (848) 226-6564 is not used.
@@ -22,7 +22,7 @@
 - **Unattended:** Impeccable's interactive world-picker was skipped (pitch-site runs unattended); the world was chosen from the brief.
 
 ## Placeholders and gaps
-- Photos: five are the small tiles inside their flyer (~300×220 each); the marble shower with tub (work-02) is a sharper 684×1224 original Ellie supplied, cropped to 4:3 (it is portrait, so a portrait frame would show the whole tub). They hold up at the sizes used, but look soft on big retina screens. Full-size originals would help a lot.
+- Photos: Ellie supplied sharper screenshots for five of the six (cobalt shower, marble shower with tub, white marble shower, wood-look niche, navy kitchen), exported at 720×540 or native size. The sunroom (herringbone brick floor) screenshot is only 652×322, so it was cropped below its "After" label to 309×232 with the PIC·COLLAGE watermark painted out; a larger copy would sharpen it. The stairs and stove photos were dropped.
 - No before/after pairs, no reviews, no hours, no email, no owner name: nothing about them appears on the page.
 - `og:image` / `og:url` point at the GitHub Pages URL (`assets/og.jpg`, 1200×630 hero capture). Update them if the site moves to its own domain.
 - The Facebook link uses the profile id (page info was restricted to Muse); check it opens the right page.
