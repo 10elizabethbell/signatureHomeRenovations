@@ -8,7 +8,7 @@
 - **Sections:** hero (logo, "Results you can be proud of." — their words, pitch, Text + Call, three checks) → five services, each row one tap to a pre-filled text (small plain arrow cue), with their published bathroom price as plain, non-clickable type after the list (beside it on desktop) → recent work (6 photos) → how it works → close (logo, their own quote, area, Text + Call) → footer with "Demo one-pager — free sample."
 - **Contact:** every text link is `sms:+16096495069?&body=…` with a per-service message (decoded and checked); call links `tel:+16096495069`. Sticky Text/Call dock on phones once the hero buttons scroll away (hides again at the closing buttons). Desktop shows the number on the text button.
 - **Tunables:** `TUNE` at the top of the script (tile size, swell speed/amp, push radius, stiffness, damping, ripple, bead counts, seam speed). One CSS section per block.
-- **Weight:** 370 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
+- **Weight:** 236 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
 
 ## Assumptions I made
 - **Price:** the brief's OCR said "FULL RENOVATION"; the full-res flyer clearly reads "FULL BATHROOM RENOVATION $7,000 - $10,000 (LABOR ONLY)". Used that. Confirm it's current before sending.
@@ -22,7 +22,7 @@
 - **Unattended:** Impeccable's interactive world-picker was skipped (pitch-site runs unattended); the world was chosen from the brief.
 
 ## Placeholders and gaps
-- Photos: Ellie supplied sharper screenshots for five of the six (cobalt shower, marble shower with tub, white marble shower, wood-look niche, navy kitchen), exported at 720×540 or native size. Two sunroom screenshots (herringbone brick floor) are shown at native size as full-width panoramas (only the PIC·COLLAGE strip trimmed off the bottom, no zoom); forcing them into 4:3 had blurred them. Gallery order: three showers, then wood niche + navy kitchen larger, then the two sunroom panoramas. The stairs and stove photos were dropped.
+- Photos: Ellie supplied sharper screenshots (cobalt shower, marble shower with tub, navy kitchen, two sunroom shots); she cut the wood-look niche and white marble shower, exported at 720×540 or native size. Two sunroom screenshots (herringbone brick floor) are shown at native size as full-width panoramas (only the PIC·COLLAGE strip trimmed off the bottom, no zoom); forcing them into 4:3 had blurred them. Gallery: cobalt shower and marble shower with tub, navy kitchen (full width on phones, third across on desktop), then the two sunroom panoramas. The stairs and stove photos were dropped.
 - No before/after pairs, no reviews, no hours, no email, no owner name: nothing about them appears on the page.
 - `og:image` / `og:url` point at the GitHub Pages URL (`assets/og.jpg`, 1200×630 hero capture). Update them if the site moves to its own domain.
 - The Facebook link uses the profile id (page info was restricted to Muse); check it opens the right page.
