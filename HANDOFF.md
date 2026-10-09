@@ -8,7 +8,7 @@
 - **Sections:** hero (logo, "Results you can be proud of." — their words, pitch, Text + Call, three checks) → five services, each row one tap to a pre-filled text (small plain arrow cue), with their published bathroom price as plain, non-clickable type after the list (beside it on desktop) → recent work (6 photos) → how it works → close (logo, their own quote, area, Text + Call) → footer with "Demo one-pager — free sample."
 - **Contact:** every text link is `sms:+16096495069?&body=…` with a per-service message (decoded and checked); call links `tel:+16096495069`. Sticky Text/Call dock on phones once the hero buttons scroll away (hides again at the closing buttons). Desktop shows the number on the text button.
 - **Tunables:** `TUNE` at the top of the script (tile size, swell speed/amp, push radius, stiffness, damping, ripple, bead counts, seam speed). One CSS section per block.
-- **Weight:** 236 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
+- **Weight:** 242 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
 
 ## Assumptions I made
 - **Price:** the brief's OCR said "FULL RENOVATION"; the full-res flyer clearly reads "FULL BATHROOM RENOVATION $7,000 - $10,000 (LABOR ONLY)". Used that. Confirm it's current before sending.
@@ -38,6 +38,14 @@
 ## Review round (Impeccable finish reviewer, once)
 Applied: wall no longer rebuilds on scroll-driven resizes (FB/iOS toolbar) and the tile pattern is seeded by position; closing wall visible on phones (copy sits on a navy panel instead of a full scrim); beads spawn only where visible and have a solid body; price plaque is flat gold with "Full bathroom renovation" as its heading (no label-over-big-number); fewer repeated numbers/claims; service copy trimmed to evidence; cooler porcelain (#f3f4f6) instead of cream; gallery graph-paper ground removed and gallery bob driven by the shared swell; desktop feature photo switched to work-04.
 Deferred to you: set the six gallery photos into a tile wall of their own (reviewer's preferred version); wet trails behind sliding beads; moving specular sheen across tiles; whether to cut "How it works" (reviewer says it restates the hero).
+
+## Full Impeccable pass (2026-10-08)
+Ran critique, clarify, audit, harden, optimize, polish, layout, typeset, adapt, animate, delight, overdrive, colorize, bolder, quieter and distill as six read-only reviews, then applied one coherent batch. Skipped: onboard (no first-run flow), live (needs a person in the browser), init/document/extract/shape (already done).
+- Fixed: buttons overflowing their column / the closing card at 320–390px (and sideways scroll at 320); hero photo tiles covering the headline at 900–1180px and overlapping each other at 320px; landscape phones (headline-only first screen, dock over it); tablet 600–899 stretching; notch safe areas in landscape; footer "Call or text" that only called (now separate Call and Text links); loose pin on the service-area line; duplicate company name under the closing quote; kitchen photo beside the bathroom price on desktop (now the cobalt shower); gold focus ring invisible on porcelain; icons and duplicate hero photos read by screen readers; contact heading lost to role=img; dock focusable while hidden; empty gallery frames with JS off.
+- Distilled: dock no longer appears over the service rows or the footer; cobalt chips lost their raised shadow; fewer repeats of "free estimate" and "15+ years"; Facebook button now "See more on Facebook" (fits one line).
+- Performance: wall starts before the photo data downloads, hero photos load right after their own data, layout reads batched before writes each frame, phone canvas at 1.5x.
+- Motion: glint sweep across the glazed tiles (overdrive pick; `TUNE.glint`), photo tiles and beads ride the same water, tiles no longer stick at the push limit, seams at true pixel scale, closing wall rises under its waterline.
+- Not done (your call): cutting "How it works" (two reviewers suggested it; it repeats the hero); tiles cracking loose and being re-set; wet trails behind beads; seams reacting to the finger; crisper tile spring (stiffness 70 / damping 8); hiding the top-bar number on phones.
 
 ## Ideas not built (yours to pick)
 - **Runner-up world:** steamed shower glass you wipe clear with a finger to reveal their finished work, with condensation beads running down. Very touchable, bathroom-first; swaps in for the tile wall in the hero.

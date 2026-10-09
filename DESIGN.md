@@ -20,6 +20,24 @@ colors:
   shadow: "rgba(0,0,0,.35)"
   shadow-soft: "rgba(0,0,0,.3)"
 typography:
+  display-tablet:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(56px, 9vw, 76px)"
+    fontWeight: 900
+    lineHeight: 1.02
+    letterSpacing: "-0.01em"
+  display-compact:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(48px, 5.4vw, 64px)"
+    fontWeight: 900
+    lineHeight: 1.02
+    letterSpacing: "-0.01em"
+  display-landscape:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "clamp(32px, 12vh, 56px)"
+    fontWeight: 900
+    lineHeight: 1.02
+    letterSpacing: "-0.01em"
   display-desktop:
     fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
     fontSize: "clamp(56px, 6vw, 84px)"
@@ -228,12 +246,12 @@ Depth is physical, not interface chrome: tiles are lit by the swell, photos are 
 
 ### Shadow Vocabulary
 - **Set Object** (`0 10px 24px -8px rgba(6,14,32,.55), 0 3px 8px -2px rgba(6,14,32,.35)`): photo tiles, gallery frames, the phone close card.
-- **Glazed Chip** (`inset 0 -6px 10px rgba(0,0,0,.3), 0 6px 12px -6px rgba(0,0,0,.35)`): cobalt chips, an inset shade so they read as glazed tiles.
+- **Glazed Chip** (`inset 0 -6px 10px rgba(0,0,0,.3)`, no outer lift, so chips read as tiles set flush, not buttons): cobalt chips, an inset shade so they read as glazed tiles.
 - **Feature Lift** (`0 24px 40px -18px rgba(0,0,0,.35)`): the desktop feature photo beside the services.
 - **Dock Lift** (`0 -10px 24px -8px rgba(6,14,32,.6)`): the fixed bottom dock, casting upward.
 
 ### Named Rules
-**The Objects Cast, Surfaces Don't Rule.** Only things that are physically set into or hung on the wall (photos, chips, dock) cast shadows. Sections, rows and text never do.
+**The Objects Cast, Surfaces Don't Rule.** Only things that are physically set into or hung on the wall (photos, dock) cast shadows. Sections, rows and text never do.
 
 ## Shapes
 
@@ -289,6 +307,14 @@ A canvas behind the hero and close, drawn by one `TileWall` per host and tuned o
 - **Pause off screen:** each job registers its host with an IntersectionObserver (80px margin); the loop stops entirely when nothing is visible and wakes on re-entry.
 - **Reduced motion:** with `prefers-reduced-motion: reduce` the loop never starts; each job draws one still frame (lit wall at rest, flat seams, untransformed photos), smooth scroll and button/dock transitions are removed.
 - **Floating frames:** the gallery photos and desktop feature photo bob and tilt with the swell and dodge the pointer on the same spring constants.
+
+### Additions from the full Impeccable pass (2026-10-08)
+- **Glint:** a soft band of window light sweeps diagonally across the glazed tiles every `TUNE.glintPeriod` seconds (default 4.5), bending with the swell slope and flaring on shoved tiles. `TUNE.glint` sets strength; 0 turns it off. Reduced motion parks it mid-wall.
+- **One water:** photo tiles tilt from the swell slope (no private sine), beads ride the swell and get knocked loose by ripple rings, and beads meander with their own phase.
+- **Seams** are drawn at real pixel width so phones get broad waves, not a squeezed chop. The closing seam is inverted: porcelain above the line, the tile wall rising under it.
+- **Dock rule:** the phone dock hides while the hero copy, the service rows, the closing buttons or the footer are on screen, so the same action is never offered twice at once. Hidden means out of the accessibility tree too.
+- **Buttons wrap** (balanced) instead of overflowing below about 400px; desktop keeps them on one line.
+- **Hero photo tiles** are placed from the measured right edge of the copy; with fewer than four free columns they are omitted rather than overlapping the headline.
 
 ## Do's and Don'ts
 

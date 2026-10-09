@@ -29,6 +29,15 @@
         ],
         "createdAt": "2026-10-09T01:39:00.136Z",
         "reason": "Ellie's pitch-site house style: system font stack (Roboto is only the Android system fallback), recorded in ellie-taste.md"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-09T01:59:37.482Z",
+        "reason": "Claude (impeccable adapt pass): detector cannot evaluate env(safe-area-inset-*) in the landscape notch rule and reads the gutter as 0; bisected to that one line, real gutter is 20px+ (verified by overflow probe)"
       }
     ]
   }
