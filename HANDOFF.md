@@ -8,7 +8,7 @@
 - **Sections:** hero (logo, "Results you can be proud of." — their words, pitch, Text + Call, three checks) → gold price plaque (their published bathroom price) → five services, each row one tap to a pre-filled text → recent work (6 photos) → how it works → close (logo, their own quote, area, Text + Call) → footer with "Demo one-pager — free sample."
 - **Contact:** every text link is `sms:+16096495069?&body=…` with a per-service message (decoded and checked); call links `tel:+16096495069`. Sticky Text/Call dock on phones once the hero buttons scroll away (hides again at the closing buttons). Desktop shows the number on the text button.
 - **Tunables:** `TUNE` at the top of the script (tile size, swell speed/amp, push radius, stiffness, damping, ripple, bead counts, seam speed). One CSS section per block.
-- **Weight:** 139 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
+- **Weight:** 150 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
 
 ## Assumptions I made
 - **Price:** the brief's OCR said "FULL RENOVATION"; the full-res flyer clearly reads "FULL BATHROOM RENOVATION $7,000 - $10,000 (LABOR ONLY)". Used that. Confirm it's current before sending.
@@ -22,7 +22,7 @@
 - **Unattended:** Impeccable's interactive world-picker was skipped (pitch-site runs unattended); the world was chosen from the brief.
 
 ## Placeholders and gaps
-- Only photos: the six small tiles inside their flyer (~300×220 each). They hold up at the sizes used, but look soft on big retina screens. Full-size originals would help a lot.
+- Photos: five are the small tiles inside their flyer (~300×220 each); the marble shower with tub (work-02) is a sharper 684×1224 original Ellie supplied, cropped to 4:3 (it is portrait, so a portrait frame would show the whole tub). They hold up at the sizes used, but look soft on big retina screens. Full-size originals would help a lot.
 - No before/after pairs, no reviews, no hours, no email, no owner name: nothing about them appears on the page.
 - `og:image` / `og:url` point at the GitHub Pages URL (`assets/og.jpg`, 1200×630 hero capture). Update them if the site moves to its own domain.
 - The Facebook link uses the profile id (page info was restricted to Muse); check it opens the right page.
