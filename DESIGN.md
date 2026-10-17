@@ -79,6 +79,11 @@ typography:
     lineHeight: 1
     letterSpacing: "-0.02em"
     fontFeature: "tnum"
+  step-numeral:
+    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
+    fontSize: "44px"
+    fontWeight: 900
+    lineHeight: 0.9
   body:
     fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
     fontSize: "17px"
@@ -284,7 +289,7 @@ A hairline-ruled list on porcelain. Each row (min 84px) is one link: a 52px coba
 Photos are always framed in a 4px gold border with 4px corners, navy-3 fill underneath, Set Object shadow, cover-cropped, fading in over 500ms once decoded. In the hero they are positioned on the tile grid (4x3 cells on phone, 5x4 / 4x3 on desktop) and replace the tiles they cover. In the gallery they are 4:3 with a 15px On-Navy Soft caption. Photos are never draggable or selectable.
 
 ### Steps
-Three numbered rows: cobalt chip with the number, Title, and body at max 44ch; inline links are Ink, 800 weight, with a 2px Aged Brass underline.
+Three numbered rows: a plain cobalt numeral (no chip, so it never reads as a button), Title, and body at max 44ch; inline links are Ink, 800 weight, with a 2px Aged Brass underline.
 
 ### Top Bar
 The logo (gold script on transparent, 158px phone, 210px desktop) and a Polished Brass phone link with icon. No menu.
@@ -340,3 +345,11 @@ A canvas behind the hero and close, drawn by one `TileWall` per host and tuned o
 ## Removed (2026-10-09)
 - **Dock:** the sticky phone Text/Call bar is gone (Ellie's call). Ignore the Dock component, Dock Lift shadow, dock-slide motion and the dock rule above; Text/Call pairs now appear only at the hero and the close.
 - **Close scrim:** the desktop full-width navy scrim over the closing wall is gone; the copy sits on a navy panel sized to it at every width.
+
+## Finishing rules pass (2026-10-17)
+- **Hero:** one Text button under the headline; the number lives only top right. No Call button, no proof checks. The pitch is the owner's promise, not a services/area list.
+- **Hero copy zone is solid navy:** on phones the top block is opaque navy, fading to the wall over its last 40px; on desktop a solid navy column ends on a grout line (`--copy-w`, set from the measured copy edge), replacing the fading scrim. The closing panel is solid navy too. No grout ever runs behind text.
+- **Glint removed** (no sheens or films over tiles). The wall keeps swell lighting, push, ripples and beads.
+- **Services are single words;** the row arrow is Ink Soft and turns Aged Brass on hover only.
+- **Footer** shows the number as text plus the Facebook link; no second Call/Text pair beside the closing buttons.
+- `html{overscroll-behavior-y:none}` so a downward drag in the hero doesn't pull-to-refresh.

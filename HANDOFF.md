@@ -5,7 +5,7 @@
 ## What's built
 - **World:** a wet cobalt-tile shower wall with gold grout, taken from their best photo (cobalt tile + brass fixtures = their navy + gold flyer). Navy and porcelain sections joined by moving waterline seams with a gold edge.
 - **Signature element:** canvas tile wall in the hero and the closing section. Tiles catch the light as a three-sine swell passes, bulge slightly, get shoved and carried by mouse or finger and spring back with a wobble; taps and fast swipes send ripple rings; water beads hang, slide down, get pushed aside, and fast swipes shed new ones. Their photos sit in the wall as gold-framed tiles that ride the same water. Gallery photos and the desktop feature photo bob and dodge the pointer.
-- **Sections:** hero (logo, "Results you can be proud of." — their words, pitch, Text + Call, three checks) → five services, each row one tap to a pre-filled text (small plain arrow cue), with their published bathroom price as plain, non-clickable type after the list (beside it on desktop) → recent work (6 photos) → how it works → close (logo, their own quote, area, Text + Call) → footer (Call, Text, Facebook)
+- **Sections:** hero (logo and number top right, "Results you can be proud of." — their words, the owner's promise, one Text button) → five services, each row one tap to a pre-filled text (small plain arrow cue), with their published bathroom price as plain, non-clickable type after the list (beside it on desktop) → recent work (6 photos) → how it works → close (logo, their own quote, area, Text + Call) → footer (Call, Text, Facebook)
 - **Contact:** every text link is `sms:+16096495069?&body=…` with a per-service message (decoded and checked); call links `tel:+16096495069`. No sticky bar (removed 2026-10-09). Desktop shows the number on the text button.
 - **Tunables:** `TUNE` at the top of the script (tile size, swell speed/amp, push radius, stiffness, damping, ripple, bead counts, seam speed). One CSS section per block.
 - **Weight:** 242 KB single file; photos are WebP base64 in `<script type="text/plain">` blocks at the end, assigned lazily; the hero wall has a CSS tile fallback before JS runs. Processed crops are also in `assets/`.
@@ -69,3 +69,16 @@ Ran critique, clarify, audit, harden, optimize, polish, layout, typeset, adapt, 
 - Footer "Demo one-pager — free sample." line removed (Ellie, via another session).
 - Sticky phone Text/Call dock removed (Ellie, via another session); footer bottom padding that made room for it reduced. Contact is now the hero buttons, service rows, closing buttons and footer links.
 - Favicon: the gold script "S" from their logo on flyer navy (`assets/favicon-32.png`, `assets/favicon-180.png` for home-screen icons); the full wordmark is unreadable at tab size.
+
+## Finishing rules pass (2026-10-17, relayed from Ellie)
+Brought the site up to `finishing-rules.md` (Impeccable re-run skipped as asked). Live: https://10elizabethbell.github.io/signatureHomeRenovations/
+- Hero: Call button and the three proof checks removed; one Text button; the number only top right. Pitch was a services + area list; now the owner's promise: "I treat your home like my own: careful work, attention to detail, and fair, honest pricing." **Inferred copy** built from their phrases (attention to detail, fair and honest pricing, take pride); confirm with the owner.
+- No grout behind text: phone hero copy on solid navy, desktop copy on a solid navy column ending on a grout line (replaces the fading scrim, the same "film" Ellie flagged on the close), closing panel solid.
+- Glint sweep removed (rule: no sheens or glints over tiles).
+- Services are single words (sentences removed); subhead "Tap one to text me about it." (dropped the repeated number); arrows accent on hover only.
+- How it works in first person: "Tell me what you'd like done." / "I'll give you a free estimate, with fair and honest pricing." / "I'm licensed and insured, and I take pride in every detail."
+- Step numbers are plain numerals, not cobalt chips that looked like buttons.
+- Footer: number as text + Facebook link; the Call/Text links duplicated the closing buttons on the same screen.
+- Pull-to-refresh off (`overscroll-behavior-y:none`) so downward drags in the hero push tiles.
+- Already passing: Pages + og image, no demo text, logo favicon, no sticky bar, no email (none known, none invented), Facebook button under the photos and in the footer, no intro sentence or captions, sharp photos.
+- Not applicable: form outlines (no form), city pills (none), older-audience rules (customers are homeowners, not flagged 40+).
